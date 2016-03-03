@@ -1,0 +1,64 @@
+body { 
+background-color: #f0f0f5;
+font-size: 100%;
+font-family: Tahoma;
+} 
+
+/*Заголовок и его размер*/
+h1 {
+	font-size: 20px;
+}
+
+/*Параметри блока*/
+.blok_document{ 
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Параметры тени */
+    padding: 10px;
+	padding-top:20px; 
+	text-align:center;
+	width: 50%;
+	margin-left: 25%;
+	border:2px solid #e0ebeb;
+}
+
+/*Параметри абзацев*/ 
+p{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+/*Подгон размера фото*/
+.size_photo {
+	width: 160px;
+	height: 210px;
+}
+
+/*Параметри горизонтальной линии*/
+hr{ 
+	margin-left: 40px; 
+	margin-right: 40px; 
+	margin-top: 15px; 
+} 
+
+/*Параметри описания*/
+.blok_select{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 60px;
+	padding-top: 5px;
+}
+
+/*Блок контактных данных*/ 
+.contact p{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+/*Параметри фидбек*/
+.feedback p{
+	font-size: 18px;
+	text-align: left;
+	padding-left: 50px;
+}
