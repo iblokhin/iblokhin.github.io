@@ -1,5 +1,5 @@
 body { 
-background-color: #f0f0f5;
+background-color:#ccc;
 font-size: 100%;
 font-family: Tahoma;
 } 
@@ -9,8 +9,8 @@ h1 {
 	font-size: 20px;
 }
 
-/*Параметри блока*/
-.blok_document{ 
+/*Параметри блока и расположение*/
+.blok_document { 
     background: white;
     box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Параметры тени */
     padding: 10px;
@@ -22,7 +22,7 @@ h1 {
 }
 
 /*Параметри абзацев*/ 
-p{
+p {
 	font-size: 18px;
 	text-align: left;
 	padding-left: 50px;
@@ -35,14 +35,14 @@ p{
 }
 
 /*Параметри горизонтальной линии*/
-hr{ 
+hr { 
 	margin-left: 40px; 
 	margin-right: 40px; 
 	margin-top: 15px; 
 } 
 
 /*Параметри описания*/
-.blok_select{
+.blok_select {
 	font-size: 18px;
 	text-align: left;
 	padding-left: 60px;
@@ -50,14 +50,14 @@ hr{
 }
 
 /*Блок контактных данных*/ 
-.contact p{
+.contact p {
 	font-size: 18px;
 	text-align: left;
 	padding-left: 50px;
 }
 
 /*Параметри фидбек*/
-.feedback p{
+.feedback p {
 	font-size: 18px;
 	text-align: left;
 	padding-left: 50px;
