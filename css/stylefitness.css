@@ -1,150 +1,144 @@
 body {
-	height: 950px;
-	width: 1366px;
-	margin: auto;
-	background-color: #f6f6f6;
-}
-.field {
-	margin: auto;
-	height: 950px;
-	width: 1060px;
-	background-color: white;
-	box-shadow:0 0 10px #dbdbdb;
-} 
-.logo {
-	padding-top: 50px;
-	padding-left: 46px;  
+	background-color: #f6f6f6; 
+	margin: 0 auto;
 }
 
-.nav-wrapper {
-   display: inline-block; 
-	background-color: #595959;
-	margin-top: 40px;
-	margin-left: 46px;
-    width: 966px;
-    height: 40px;
- }
- 
-#nav-menu1 {
-	height: 40px;
+.wrapper {              /* Поле со всем контентом */
+	margin: auto;   /* Наружные отступы */
+	padding: 0 46px;     /* Внутрение отступы */
+	width: 968px;         /* Ширына страницы с контентом */
+	background-color: white;     /* Цвет страницы */
+	box-shadow: 0 0 3px 0 rgba(200, 200, 200, 5);		/* Оттенок по краям */
 }
 
-#nav-menu1 ul li {
-	float: left;
-	position: relative;
+/* Header */
+
+img {
+	padding-top: 50px;  /* Отступ с верху "Логотип" */
 }
 
- #nav-menu1 ul li a{
-	color: white;
-	text-decoration: none;
-	line-height: 40px;
-	height: 40px;
-    width: 76px;
-    margin-left: 24px;
-    padding: 0 24px;
-	display: block;
-	text-align: center;
- 	
- }
-#nav-menu1 ul li a:hover {
-	background-color: black;
+.menu {
+	overflow: hidden;		/* Отображает только область внутри элемента */
+	margin-top: 40px;		/* Внешний отступ меню сверху */
+    height: 40px;		/* Висота меню */
+    width: 968px;		/* Ширина меню */		
+	background-color: #555;		/* Цвет меню */
 }
 
-
-
-#nav-menu1 .sub-menu {
-	position: absolute;
-	/* position: absolute; */
-	margin-top: 40px;
-	width: 240px;
-}
-#nav-menu1 .sub-menu li {
-	
-	display: inline;
-	/* display: none; */
-	border: 1px solid black;
-	width: 240px;
-	padding: 0px;
-	background: white;
-	line-height: 40px;
-	overflow:visible;
+.menu li {
+	float: left;		/* Выравнивает элемент по левому краю, и выстраивает текст по горизонтале */
+	text-align: center;		/* Выравнивает текст по горизонтале, (центр) */		
+	width: 140px;		/* Ширина кнопок меню */
 }
 
-#nav-menu1 .sub-menu li a {
-	line-height: 40px;
-	height: 40px;
-	width: 240px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	color: black;
+.menu a {
+	display: block;		/* Отображает елемент как блочный */
+	color: white;		/* Цвет текста */
+	text-decoration: none;		/* Отменяет стиль ссылки */
+	line-height: 40px;		/* Висота текста, межстрочный интервал */
+	font-size: 15px;		/* Размер шрифта */
+	text-shadow: 1px 1px 1px rgba (0, 0, 0, 0.5);		/* Тень по краям меню */
 }
 
-#nav-menu1 li:hover .sub-menu li {
-	display:block;
+.menu a:hover {		/* При на видении на ссылку изменяется фоновый цвет */
+	background-color: #333;
+	border-right: 1px solid #888;
+	border-left: 1px solid #888;
 }
 
-#nav-menu1 .sub-menu li a:hover{
-	background-color: #e0e0d1;
+/* SIDEBAR */
+
+.container {
+	overflow: hidden;		/* Отображает только область внутри элемента */
 }
 
-.nav-wrapper #nav-menu1 .sub-menu {
-	display: inline-block;
-	margin-left: -150px;
-	text-align: left;
+.container .sidebar {
+	float: left;		/* Выравнивает элемент по левому краю */
+	width: 240px;		/* Ширина меню */
+	margin-top: 40px;		/* Внешный отступ сверху */ 
 }
 
+.sub-menu li {		/* Рамки по краям и цвет их, что бы не двоились, верхнюю прописывае отдельно */
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.sub-menu li:first-child {
+	border-top: 1px solid #ddd;		/* Верхняя бардюр, сплошная линия и цвет */
+}
+
+.sub-menu a {
+	line-height: 40px;		/* межстрочный интервал */
+	font-size: 14px;		/* Размер шрифта */
+	text-decoration: none;		/* Отменяет стиль ссылки */
+	padding-left: 25px;		/* Внутрений отступ слева */
+	color: rgb(101, 99, 99);		/* Цвет текста */
+	transition: 0.4s all;		/* Анимацыя,передвигает текст */
+}
+
+.sub-menu a:hover {
+	color: black;		/* При навидении на ссылку изменяется цвет текста */
+	padding-left: 35px;		/* На какое растояние сдвигает transition */ 
+}
+
+.sub-menu li:hover {		/* При навидении на поле изменяется цвет фона */
+	background-color: #f0f0f0;
+}
+
+/* CONTENT */
 
 .content img {
-	float: right;
-	margin-top: 40px;
-	padding-right: 48px;
+	float: right;		/* Привязывает картинку к правому краю */
+	padding: 40px 0 0 0;		/* Внутрений отступ сверху */
 }
 
-.content span {
-	float: right;
-	margin-top: 40px;
-	margin-left: 358px;
-	padding-right: 48px;
-	height: 140px;
+.content p {
+	padding: 40px 0 0 25px;		/* Внутрение отступи текста */
+	line-height: 20px;		/* Межстрочный интервал текста */
+	font-size: 14px;		/* Размер текста */
+	color: rgb(44, 44, 44);		/* Цвет текста */
+	width: 630px;		/* Ширина блока текста */
+	float: right;		/* Привязка текста к правому краю */
 }
 
-.nav-wrapper1 {
-	display: inline-block; 
-	background-color: #e1e1e1;
-	width: 966px;
- 	height: 40px;
-	margin-left: 46px;
- 	margin-top: 60px;
- 	margin-bottom: 60px;
+
+/* FOOTER */
+
+.footer {
+	overflow: hidden;		/* Отображает только область внутри элемента */
+	padding-top: 60px;		/* Внутрений отступ сверху */
+	padding-bottom: 55px;		/* Внутрений отступ снизу */ 
+	clear: both;		/* Зачищает граници по краям */
+	
 }
 
-#nav-menu2 {
-	height: 40px;	 
+.footer-menu {
+	height: 40px;		/* Висота футера */
+	background-color: #ddd;		/* Цвет фона футера */
 }
 
-#nav-menu2 ul li {
-	float: left;
-	position: relative;
+.footer-menu li {
+	float: left;		/* Привязка текста к левому краю, вистраивает текст по горизонтали */
+	width: 120px;		/* Ширина кнопок меню футера */
+	line-height: 40px;		/* Межстрочный интервал текста */
+	font-size: 14px;		/* Размер текста */
 }
-footer #nav-menu2 ul li a{
-	color: black;
-	text-decoration: none;
-	line-height: 40px;
-	height: 40px;
-    width: 76px;
-    margin-left: 24px;
-    padding: 0 24px;
-	text-align: center;
- }
 
-footer #nav-menu2 ul li a:hover {
-	background-color: #e1e1e1;
-	text-decoration: underline;
+.footer-menu li:last-child {
+	float: right;		/* Привязывает последний елемент списка к правому краю */
+	width: 200px;		/* Ширина блока текста */
+	text-align: right;		/* Расположение текста по горизонтали */
+	padding-right: 25px;		/* Внутрений отступ */
 }
-footer #nav-menu2 span {
-	float: right;
-	margin-right: 25px;
-	margin-top: 10px;
+
+.footer-menu a {
+	display: block;		/* Отображает елемент как блочный */
+	color: black;		/* Цвет текста */
+	text-decoration: none;		/* Отменяет стилизацыю ссылки */
+	padding-left: 24px;		/* Внутрений отступ */
 }
+
+.footer-menu a:hover {
+	text-decoration: underline;		/* При навидение на ссылку, отображает подчеркивание текста */
+}  
