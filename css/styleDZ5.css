@@ -1,0 +1,207 @@
+
+
+body {
+	background-image: url(../img/fonDZ5.png);		/* Вставляем в фон картинку */
+	background-size: cover;	/* Картинку растягиваем на всю ширину екрана */
+	width: 1200px;
+	height: 1060px;
+}
+
+/* HEADER */
+
+.menu {
+	position: relative;		/* Относительное позиционирование */
+	padding-left: 400px;		/* Отступ меню от левого края */	
+}
+
+.first-menu li {
+	margin-top: 5px;
+	float: left;		/* Выстраиваем меню по горизонтале */
+	text-decoration: none;
+	padding: 0 10px 0 15px;
+	line-height: 30px;
+}
+
+.first-menu a {
+	color: #60b5ed;
+	font-size: 14px;
+	font-family: "helvetica neue", Arial;		/* Подключение шрифта */
+	text-decoration: none;
+}
+
+.first-menu li:last-child{		/* Отступ для последнего елемента li */
+	padding-right: 18px;
+	border-right: 2px solid #56a2dc;
+	line-height: 30px;
+}
+
+.vender a {
+	color: white;
+	background: #4aa6d8;
+	font-weight: bold; 
+	margin-top: 0px;
+	padding:12px 10px 10px 10px;
+	font-size: 14px;
+}
+
+.two-menu li:first-child {
+	padding-right: 10px;
+	margin-top: 5px;
+}
+
+.two-menu li {
+	float: left;
+	margin-top: 5px;
+	padding: 5px 17px 0 0;
+}
+
+.two-menu a {
+	text-decoration: none;
+	vertical-align: middle;
+	color: #fff;
+	font-family: "helvetica neue", Arial;
+}
+
+.two-menu img {
+	padding-left: 18px;
+	width: 18px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.last-menu {
+	position: relative;
+	float: right;
+	line-height: 36px;
+	background-color: #4aa6d8;
+	padding: 0 12px;
+	margin-right: 15px;
+}
+
+.last-menu li {
+	float: left;
+	padding-left: 2px;
+	padding-right: 2px;
+	height: 36px;
+}
+
+.last-menu span {
+	font-size: 13px;
+	color: #fff;
+	font-family: "helvetica neue", Arial;
+}
+
+.last-menu a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	border-bottom: 2px solid #9ac1e4;
+	font-family: "helvetica neue", Arial;
+}
+
+/* CONTENT */
+
+.wrapper {
+	position: relative;
+	display: block;
+	float: right;
+	width: 560px;
+	height: 610px;
+	margin-right: 300px;
+	margin-top: 210px;
+	background-color: rgba(10, 10, 10, 0.6);		/* Полупрозрачное черное поле */
+	clear: both;		/* Зачищаем граници */
+}
+
+.wrapper .topic {
+	position: absolute;
+	display: block;
+	margin: 22px 210px;
+	font-size: 24px;
+	color: #fff; 
+	font-family: "helvetica neue", Arial;
+}
+
+hr {
+	font-size: 2px;
+	color: #b8c0ab;
+	margin-top: 60px;
+}
+
+.logo {
+	height: 35px;
+	margin: 32px 140px 0 140px;
+}
+
+.line:before {		/* Линия перед текстом */
+	display: inline-block;
+	width: 120px;
+	margin: 0 3px 2px 0;
+	content: "";		/* позволяет вставлять генерируемое содержание в текст */
+	border-top: 2px solid #777777;
+} 
+
+.line:after {		/* Линия после текста */
+	display: inline-block;
+	width: 120px;
+	margin: 0 0 3px 2px;
+	content: "";		/* позволяет вставлять генерируемое содержание в текст */
+	border-top: 2px solid #777777;
+}
+
+.line {
+	margin-top: 35px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgba(248, 248, 255, 0.6);
+	font-family: "helvetica neue", Arial;
+}
+
+.main input {
+	margin: 0 140px 15px 140px;
+	padding-left: 20px;
+	width: 255px;
+	height: 35px;
+	font-size: 14px;
+	color: white;
+	border: none;
+	border-bottom: 1px solid #777777;
+	background-color: black;
+	font-family: "helvetica neue", Arial;
+}
+
+.maincheck span {
+	font-weight: normal;
+	color: rgba(248, 248, 255, 0.6);
+	font-family: "helvetica neue", Arial;
+}
+
+.maincheck input {
+	margin-left: 140px;
+}
+
+.mainsub input {
+	width: 150px;
+	height: 35px;
+	margin: 20px 205px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;		/* Закругляет угли рамки */
+	background-color: #469fd4;
+}
+
+input:focus {		/* При активации поля, виделяется заданими параметрамы */
+	color: #fff;
+	background-color: #1b5288;
+	box-shadow: 0 0 10px 3px rgba(104, 155, 204, 0.7)
+}
+
+/* FOOTER */
+
+.footer p {
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	color: rgba(248, 248, 255, 0.6);
+	font-family: "helvetica neue", Arial;
+}
