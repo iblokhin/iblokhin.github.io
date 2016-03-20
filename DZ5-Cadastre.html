@@ -4,75 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Cadastre</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/styleDZ5.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-<div class="header">
-	<div class="menu">
-		<ul class="first-menu">
+<header class="header">
+	<nav class="menu">
+		<ul class="first-menu menu-item">
 			<li><a href="#">Meu YouBike</a></li>
 			<li class="vender"><a href="#">Vender</a></li>
 			<li><a href="#">Forum</a></li>
 			<li><a href="#">Contato</a></li>
 			<li><a href="#">Ajuda</a></li>
 		</ul>
-		<div class="two-menu">
-			<ul>
-			<li><img src="img/FlagDZ5.png" alt=""></li>
+		<ul class="two-menu menu-item">
 			<li><a href="#">Minhas Ofertas</a></li>
-			</ul>
-		</div>
-		<div class="last-menu">
-			<ul>
-				<li><span>Ola!</span></li>
-				<li><a href="#">Entrar</a></li>
-				<li><span>ou</span></li>
-				<li><a href="#">Cadastre-se</a></li>
-			</ul>		
-		</div>
-	</div>
-</div>
-<div class="sidebar">
+		</ul>
+		<ul class="last-menu menu-item">
+			<li><span>Ola!</span><a href="#">Entrar</a></li>
+			<li><span>ou</span><a href="#">Cadastre-se</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="sidebar">
 	<div class="wrapper">
-		<div class="topic">
+		<div class="topic bg">
 			<p>Cadastre-se</p>
 		</div>
-		<hr>
-		<div class="logo">
-			<a href="#"><img src="img/facebookDZ5.png" alt="facebook"></a>
+		<div class="bg">
+			<div class="logo">
+				<a href="#"><img src="img/facebookDZ5.png" alt="facebook"></a>
+			</div>
+			<div class="line">
+				<span>OU</span>
+			</div>
+			<form action="#">
+				<div class="main">
+					<input type="text" placeholder="First Name">
+				</div>
+				<div class="main">
+					<input type="text" placeholder="Last Name">
+				</div>
+				<div class="main">
+					<input type="text" placeholder="Email Addres">
+				</div>
+				<div class="main">
+					<input type="password" placeholder="Choose Password">
+				</div>
+				<div class="main">
+					<input type="password" placeholder="Password Config">
+				</div>
+				<div class="maincheck">
+					<input type="checkbox"><span>Send me Youbike updates and tips</span>
+				</div>
+				<div class="mainsub">
+					<input type="submit" value="Create my Account">
+				</div>
+			</form>
+			<div class="footer">
+				<p>By clicking the button above, you agree to the Terms of Service
+				<br>Xiew our Privacy Policy.</p>
+			</div>
 		</div>
-		<div class="line">
-			<span>OU</span>
-		</div>
-		<form action="#">
-			<div class="main">
-				<input type="text" placeholder="First Name">
-			</div>
-			<div class="main">
-				<input type="text" placeholder="Last Name">
-			</div>
-			<div class="main">
-				<input type="text" placeholder="Email Addres">
-			</div>
-			<div class="main">
-				<input type="password" placeholder="Choose Password">
-			</div>
-			<div class="main">
-				<input type="password" placeholder="Password Config">
-			</div>
-			<div class="maincheck">
-				<input type="checkbox"><span>Send me Youbike updates and tips</span>
-			</div>
-			<div class="mainsub">
-				<input type="submit" value="Create my Account">
-			</div>
-		</form>
-		<div class="footer">
-			<p>By clicking the button above, you agree to the Terms of Service
-			<br>Xiew our Privacy Policy.</p>
-		</div>		
 	</div>
-</div>	
+</section>
 </body>
 </html>
