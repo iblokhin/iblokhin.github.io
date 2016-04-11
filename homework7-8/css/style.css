@@ -128,12 +128,14 @@ header {
 
 .about {
 	display: block;
-	height: 340px;
+	/* height: 340px; */
+	padding-bottom: 68px;
 	border-top: 1px solid #33253a;
 	border-bottom: 1px solid #33253a;
     background-image: -moz-linear-gradient(bottom, #312539 0%, #745083 100%);
     background-image: -o-linear-gradient(bottom, #312539 0%, #745083 100%);
     background-image: -webkit-linear-gradient(bottom, #312539 0%, #745083 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#312539', endColorstr='#745083')"; /* IE8 */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -219,8 +221,9 @@ header {
 }
 
 .comments {
-	clear: both;
-	height: 608px;
+	/*clear: both;*/
+	/* height: 608px; */
+	padding-bottom: 0;
 	background-color: #f9f9f9;
 }
 
@@ -282,6 +285,7 @@ header {
 .post {
 	position: relative;
 	float: left;
+	width: 450px;
 	margin: 130px 0 0 57px;
 }
 
@@ -308,7 +312,7 @@ header {
 .post_link {
 	display: block;
 	margin-top: 20px;
-	margin-right: 5px;
+	margin-right: 18px;
 	font-size: 18px;
 	font-family: "League Gothic Regular", Arial, sans-serif;
 	color: #454545;

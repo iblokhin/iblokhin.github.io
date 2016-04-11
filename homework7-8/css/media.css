@@ -1,7 +1,6 @@
 
 @media (min-width: 768px) and (max-width: 959px) {
-/* @media only screen and (max-width : 768px) { */
-	
+
 header {
 	position: relative;
 	height: 798px;
@@ -252,6 +251,7 @@ header {
 	position: relative;
     text-align: center;
     padding: 8px 100px 10px;
+    border-bottom: 1px solid transparent;
 }
 
 .drop_link {
@@ -291,7 +291,7 @@ header {
 }
 
 .dawn_item:first-child {
-	border-top: none;
+	border-top: 1px solid transparent;
 }
 
 .dawn_item {
@@ -300,7 +300,7 @@ header {
     box-sizing: border-box;
     z-index: 2;
     border-bottom: 2px solid #36283e;
-    border-top: 2px solid #513d58;
+    border-top: 1px solid #513d58;
     padding: 8px;
     text-align: center;
 }
@@ -552,6 +552,7 @@ header {
 	position: relative;
     text-align: center;
     padding: 8px 100px 10px;
+	/* border: 1px solid transparent; */
 }
 
 .drop_link {
@@ -578,7 +579,6 @@ header {
 	border: 1px solid #1c252a;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	height: 46;
 }
 
 .drop_menu:hover .drop_link:hover {
@@ -591,7 +591,7 @@ header {
 }
 
 .dawn_item:first-child {
-	border-top: none;
+	border-top: 1px solid transparent;
 }
 
 .dawn_item {
@@ -600,7 +600,7 @@ header {
     box-sizing: border-box;
     z-index: 2;
     border-bottom: 2px solid #36283e;
-    border-top: 2px solid #513d58;
+    border-top: 1px solid #513d58;
     padding: 8px;
     text-align: center;
 }
