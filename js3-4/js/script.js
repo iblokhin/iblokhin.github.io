@@ -1,73 +1,68 @@
 var doc = document;
 
-var test = {
-    header: 'Тест по программированию',
-    question: ['Вопрос №1' , 'Вопрос №2' ,' Вопрос №3'],
-    checkboxName: ['one' , 'two' , 'three' , 'four' , 'five' , 'six' , 'seven' ,'eight','nine'],
-    id: ['1' , '2' , '3' , '4' , '5' , '6' , '7' ,'8','9'],
-    answer: ['Вариант ответа №1','Вариант ответа №2', 'Вариант ответа №3',
-            'Вариант ответа №1','Вариант ответа №2', 'Вариант ответа №3',
-            'Вариант ответа №1','Вариант ответа №2', 'Вариант ответа №3'],
-    submit: 'Проверить мои результаты'
+var container = doc.createElement('div');
+container.className = 'container';
+
+
+var tests = {
+    questions: ['Вопрос №1',
+                'Вопрос №2',
+                'Вопрос №3'],
+
+    answers: ['Вариант ответа №1',
+              'Вариант ответа №2',
+              'Вариант ответа №3'],
+
+    container: container,
+
+    addHeader: function () {
+        var header = doc.createElement('h3');
+        header.innerHTML = 'Тест по программированию';
+        this.container.appendChild(header);
+
+        return header;
+    },
+
+    addList: function () {
+        var list = doc.createElement('ol');
+        for (var i = 0; i < this.questions.length; i++) {
+            var listItem = doc.createElement('li');
+            list.appendChild(listItem);
+            this.container.appendChild(list);
+
+            var question = doc.createElement('p');
+            question.innerHTML = this.questions[i];
+            listItem.appendChild(question);
+
+            var answer = doc.createElement('ul');
+            for (var j = 0; j < this.answers.length; j++) {
+                var answersItem = doc.createElement('li');
+                answer.appendChild(answersItem);
+                listItem.appendChild(answer);
+                answersItem.className = 'checkbox';
+
+                var input = doc.createElement('input');
+                input.setAttribute('type', 'checkbox');
+                answersItem.appendChild(input);
+
+                var textAnswer = doc.createElement('span');
+                answersItem.appendChild(textAnswer);
+                textAnswer.innerHTML = this.answers[j];
+            }
+        }
+    },
+
+    addButton: function () {
+        var button = doc.createElement('button');
+        button.className = 'btn btn-default';
+        button.innerHTML = 'Проверить мои результаты';
+        this.container.appendChild(button);
+
+        return button;
+    }
 };
 
-var n = 0;
-
-var header = doc.createElement ('h3');
-    header.innerHTML = test.header;
-
-var form = doc.createElement( 'form');
-    form.action = '#';
-    form.method = 'post';
-    form.classList.add ('form-group');
-
-var list = doc.createElement ('ol');
-    list.classList.add ('list-group');
-
-var parent = doc.body;
-
-var container = doc.createElement ('div');
-    container.classList.add ('container');
-
-var button = doc.createElement ('button');
-    button.classList.add ('btn');
-    button.classList.add ('btn-default');
-    button.type = 'submit';
-    button.innerHTML = test.submit;
-
-container.appendChild (header);
-parent.appendChild (container);
-container.appendChild (form);
-form.appendChild (list);
-
-for (var i = 0; i < test.question.length; i++) {
-    var listItem = doc.createElement ('li');
-        listItem.classList.add = 'list-group-item';
-
-        list.appendChild (listItem);
-
-    var question = doc.createElement ('h4');
-        question.innerHTML = test.question [i];
-
-    listItem.appendChild (question);
-
-for (var j = 0; j < 3; j++) {
-    var checkbox = doc.createElement ('input');
-        checkbox.type = 'checkbox';
-        checkbox.name = test.checkboxName [n];
-        checkbox.id = test.id [n];
-
-    var answer = doc.createElement ('p');
-
-    var label = doc.createElement ('label');
-        label.htmlFor = test.id [n];
-
-    label.appendChild (doc.createTextNode(test.answer [n]));
-    listItem.appendChild (answer);
-    answer.appendChild (checkbox);
-    answer.appendChild (label);
-    n++;
-    }
-}
-
-form.appendChild (button);
+tests.addHeader();
+tests.addList();
+tests.addButton();
+doc.body.appendChild(container);
