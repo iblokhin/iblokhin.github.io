@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Carousel and template for HW 11-12</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <section class="carousel clearfix">
+        <div class="carousel-arrow-left"><span>Влево</span></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/animal1.jpg"><p>Картинка 1</p></li>
+                <li class="carousel-element"><img src="img/animal2.jpg"><p>Картинка 2</p></li>
+                <li class="carousel-element"><img src="img/animal3.jpg"><p>Картинка 3</p></li>
+                <li class="carousel-element"><img src="img/animal4.jpg"><p>Картинка 4</p></li>
+                <li class="carousel-element"><img src="img/animal5.jpg"><p>Картинка 5</p></li>
+                <li class="carousel-element"><img src="img/animal6.jpg"><p>Картинка 6</p></li>
+                <li class="carousel-element"><img src="img/animal7.jpg"><p>Картинка 7</p></li>
+                <li class="carousel-element"><img src="img/animal8.jpg"><p>Картинка 8</p></li>
+                <li class="carousel-element"><img src="img/animal9.jpg"><p>Картинка 9</p></li>
+                <li class="carousel-element"><img src="img/animal10.jpg"><p>Картинка 10</p></li>
+                <li class="carousel-element"><img src="img/animal11.jpg"><p>Картинка 11</p></li>
+                <li class="carousel-element"><img src="img/animal12.jpg"><p>Картинка 12</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </section>
+
+    <section class="tamplate clearfix">
+        <script type="text/html" id="profile">
+            <div class="box-profile">
+                <h1><%= name%></h1>
+                <div class="photo">
+                    <img src="<%= photo.src %>" width="130px" alt="<%= photo.alt%>">
+                </div>
+                <div class="block">
+                    <p><%= job %></p>
+                    <div class="line"></div>
+                    <p><%= why %></p>
+                    <ul>
+                        <% for (var i = 0; i < cause.length; i++) { %>
+                        <li><%= cause[i] %></li>
+                        <% } %>
+                    </ul>
+                    <div class="line"></div>
+                    <p><%= telephon %> <br> <%= number %></p>
+                    <p><%= fb %><br>
+                        <a href="<%= fb_link %>"><%= fb_link %></a>
+                    </p>
+                    <div class="line"></div>
+                    <p><%= feedback %> <br> <%= feedback_text %></p>
+                </div>
+            </div>
+        </script>
+    </section>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/tmpl.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
