@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finally! Last Assignment!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+        <h4>TODO LIST</h4>
+        <ul class="itemList"></ul>
+        <div class="controlls">
+            <input type="text" class="itemValue" placeholder="Add a new task...">
+            <button class="itemAdd">Add</button>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="list-template">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <li><%= data[i] %>
+        <span data-value="<%= data[i] %>" class="itemDelete"></span>
+        <span data-value="<%= data[i] %>" class="itemEdit"></span>
+    </li>
+    <% }; %>
+</script>
+<script data-main="js/app" src="js/require.js"></script>
+</body>
+</html>
