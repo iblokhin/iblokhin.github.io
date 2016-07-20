@@ -1,0 +1,67 @@
+& {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: px(52);
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    h2 {
+        margin-left: px(-8);
+        color: $color4;
+        font-size: px(44);
+        letter-spacing: px(.4);
+        line-height: px(52);
+        text-align: center;
+    }
+
+    p {
+        margin-top: px(24);
+        color: $color4;
+        font-family: 'Roboto Light', Arial, sans-serif;
+        font-size: px(36);
+    }
+
+    form {
+        -js-display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: px(36);
+
+        input {
+            width: px(560);
+            height: px(80);
+            margin-left: px(-4);
+            padding-left: px(22);
+            border: px(2) solid $color7;
+            border-radius: px(8);
+            outline: 0;
+            letter-spacing: px(-1.3);
+            box-shadow: 0 px(2) 0 $color11;
+        }
+
+        a {
+            display: block;
+            width: px(560);
+            height: px(80);
+            margin-top: px(20);
+            transition: background-color .2s, color .2s;
+            border: px(4) solid $color2;
+            border-radius: px(40);
+            background-color: $color1;
+            color: $color2;
+            font-size: px(28);
+            font-weight: 700;
+            line-height: px(80);
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                border: px(4) solid $color2;
+                background-color: $color9;
+                color: $color1;
+            }
+        }
+    }
+}

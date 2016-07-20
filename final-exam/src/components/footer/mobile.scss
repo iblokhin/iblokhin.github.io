@@ -1,0 +1,80 @@
+& {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: px(80);
+    padding-top: px(36);
+    border-top: px(8) solid $color2;
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    h2 {
+        color: $color2;
+        font-size: px(32);
+        letter-spacing: .7px;
+        text-transform: uppercase;
+    }
+
+    >div {
+        h3 {
+            margin-top: px(30);
+            margin-left: px(-8);
+            color: $color4;
+            font-size: px(28);
+            text-align: center;
+        }
+
+        ul {
+            -js-display: flex;
+            display: flex;
+            justify-content: center;
+            margin-top: px(8);
+
+            li {
+                margin: 0 px(14);
+
+                a {
+                    transition: color .2s;
+                    color: $color4;
+                    font-family: 'Roboto Light', Arial, sans-serif;
+                    font-size: px(28);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        margin-top: px(32);
+        margin-left: px(-6);
+        color: $color4;
+        font-size: px(28);
+    }
+
+    .logo {
+        margin-bottom: px(36);
+
+        h3 {
+            margin-top: px(32);
+            color: $color4;
+            font-size: px(20);
+            letter-spacing: .9px;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: block;
+            margin-top: px(16);
+            text-decoration: none;
+
+            img {
+                width: px(220);
+                height: px(48);
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+& {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: px(152);
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    h2 {
+        color: $color4;
+        font-size: px(44);
+        line-height: px(52);
+        text-align: center;
+    }
+
+    p {
+        margin-top: px(66);
+        color: $color4;
+        font-family: 'Roboto Light', Arial, sans-serif;
+        font-size: px(36);
+    }
+
+    form {
+        -js-display: flex;
+        display: flex;
+        margin-top: px(80);
+
+        input {
+            width: px(480);
+            height: px(80);
+            margin-right: px(20);
+            padding-left: px(32);
+            border: px(2) solid $color7;
+            border-radius: px(8);
+            outline: 0;
+            color: $color12;
+            box-shadow: 0 px(2) 0 $color7;
+        }
+
+        a {
+            display: block;
+            width: px(320);
+            height: px(80);
+            transition: background-color .2s, color .2s;
+            border: px(4) solid $color2;
+            border-radius: px(40);
+            background-color: $color2;
+            color: $color1;
+            font-size: px(28);
+            font-weight: 700;
+            line-height: px(80);
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                border: px(4) solid $color2;
+                background-color: $color1;
+                color: $color2;
+            }
+        }
+    }
+}

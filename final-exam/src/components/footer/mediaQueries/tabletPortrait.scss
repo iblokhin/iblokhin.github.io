@@ -1,0 +1,42 @@
+@import '../mobile';
+
+& {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: px(200);
+    padding: px(74) px(80) px(64);
+
+    >div {
+        margin-left: px(-40);
+
+        h3 {
+            margin-top: 0;
+        }
+
+        ul {
+            flex-direction: column;
+            margin-top: px(28);
+
+            li {
+                margin: 0 0 px(16);
+            }
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .logo {
+        position: relative;
+        top: px(-6);
+        margin-bottom: 0;
+        margin-left: px(40);
+
+        h3 {
+            margin-top: 0;
+            text-align: right;
+        }
+    }
+}

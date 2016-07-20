@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat'), local('montserrat-regular'),
+    url(fonts/montserrat-regular.woff2) format('woff2'),
+    url(fonts/montserrat-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Light'), local('roboto-light'),
+    url(fonts/roboto-light.woff2) format('woff2'),
+    url(fonts/roboto-light.woff) format('woff');
+}
