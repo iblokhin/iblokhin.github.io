@@ -1,0 +1,50 @@
+@import '../mobile';
+
+& {
+    height: px(1400);
+    background: url('../images/header/header-bg-desktop.jpg') no-repeat 0 0;
+    background-size: cover;
+    background-position-x: px(-674);
+
+    .header-top {
+        -js-display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: px(76);
+        padding: 0 px(100);
+
+        div {
+            order: 2;
+            margin-right: 0;
+        }
+
+        h2 {
+            margin-top: px(8);
+            margin-left: px(-2);
+        }
+    }
+
+    h1 {
+        margin-top: px(280);
+        margin-left: px(-12);
+        padding: 0 px(260);
+        font-size: px(104);
+        letter-spacing: px(-.8);
+        line-height: px(126);
+    }
+
+    p {
+        margin-top: px(54);
+        margin-left: px(-6);
+        font-size: px(48);
+    }
+
+    >a {
+        width: px(448);
+        margin-top: px(76);
+        padding: 0 px(10) 0 0;
+        text-align: center;
+    }
+}

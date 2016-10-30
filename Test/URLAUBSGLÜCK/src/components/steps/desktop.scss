@@ -1,0 +1,140 @@
+& {
+    margin-top: px(194);
+    font-family: Montserrat, Arial, sans-serif;
+
+    h2 {
+        margin-left: px(-8);
+        color: $color4;
+        font-size: px(44);
+        text-align: center;
+    }
+
+    .container {
+        -js-display: flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: px(72);
+
+        .box {
+            position: relative;
+            width: px(600);
+            margin: 0 px(20);
+
+            .step {
+                position: relative;
+                width: px(600);
+                height: px(800);
+                border-radius: px(8);
+                background-color: $color1;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    opacity: .9;
+                }
+
+                >div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 px(40);
+                    background-image: linear-gradient(to top, $color6 0%, transparent 100%);
+
+                    a {
+                        display: block;
+                        width: px(140);
+                        height: px(40);
+                        margin-top: px(458);
+                        margin-left: px(4);
+                        padding-top: px(2);
+                        border-radius: px(20);
+                        background-color: $color2;
+                        color: $color1;
+                        font-size: px(20);
+                        letter-spacing: 1.5px;
+                        line-height: px(40);
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+                    h2 {
+                        margin-top: px(32);
+                        margin-left: px(-2);
+                        color: $color1;
+                        font-size: px(48);
+                        line-height: px(56);
+                        text-align: left;
+                    }
+
+                    p {
+                        margin-top: px(26);
+                        color: $color7;
+                        font-family: 'Roboto Light', Arial, sans-serif;
+                        font-size: px(28);
+                        line-height: px(32);
+                    }
+                }
+
+
+            }
+
+            .step2 {
+                //img {
+                //    background-image: url('../images/steps/step2-big.jpg') no-repeat;
+                //    background-size: cover;
+                //    height: 100%;
+                //}
+                >div {
+                    a {
+                        margin-top: px(518);
+                        margin-left: 0;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+.owl-prev {
+    position: absolute;
+    top: px(306);
+    left: px(42);
+    width: px(60);
+    height: px(110);
+    transition: opacity .2s;
+    background: url('../images/steps/arrowLeft.svg') no-repeat center;
+    background-size: cover;
+    content: '';
+    cursor: pointer;
+    opacity: .5;
+    z-index: 2;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.owl-next {
+    position: absolute;
+    top: px(306);
+    right: px(42);
+    width: px(60);
+    height: px(110);
+    transition: opacity .2s;
+    background: url('../images/steps/arrowRight.svg') no-repeat center;
+    background-size: cover;
+    content: '';
+    cursor: pointer;
+    opacity: .5;
+    z-index: 2;
+
+    &:hover {
+        opacity: 1;
+    }
+}

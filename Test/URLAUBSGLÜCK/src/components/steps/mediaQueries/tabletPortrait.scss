@@ -1,0 +1,102 @@
+@import '../mobile';
+
+& {
+    h2 {
+        margin-top: px(194);
+        margin-left: px(8);
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: px(72);
+
+        .box {
+            position: relative;
+            width: px(472);
+            max-height: px(800);
+            margin-bottom: 0;
+
+            .step {
+                width: px(472);
+                height: px(800);
+
+                img {
+                    height: 100%;
+                }
+
+                >div {
+                    a {
+                        margin-top: px(424);
+                    }
+
+                    p {
+                        margin: px(22) 0 0 px(-4);
+                        letter-spacing: px(-.2);
+                        line-height: px(34);
+                    }
+
+                    h2 {
+                        margin-left: px(-2);
+                    }
+                }
+            }
+
+            .step2 {
+                >div {
+                    a {
+                        margin-top: px(518);
+                    }
+
+                    p {
+                        margin: px(18) 0 0 px(-2);
+                        letter-spacing: px(.2);
+                    }
+
+                    h2 {
+                        margin-left: px(-4);
+                        letter-spacing: px(.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-prev {
+    position: absolute;
+    top: px(80);
+    left: px(40);
+    width: px(60);
+    height: px(110);
+    transition: opacity .2s;
+    background: url('../images/steps/arrowLeft.svg') no-repeat center;
+    background-size: cover;
+    content: '';
+    cursor: pointer;
+    opacity: .5;
+    z-index: 2;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.owl-next {
+    position: absolute;
+    top: px(80);
+    right: px(40);
+    width: px(60);
+    height: px(110);
+    transition: opacity .2s;
+    background: url('../images/steps/arrowRight.svg') no-repeat center;
+    background-size: cover;
+    content: '';
+    cursor: pointer;
+    opacity: .5;
+    z-index: 2;
+
+    &:hover {
+        opacity: 1;
+    }
+}
