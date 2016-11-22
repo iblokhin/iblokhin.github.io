@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Енергетичний Холдинг</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -38,9 +39,17 @@
                 <a href="#">Зарегистрироваться</a>
                 <span class="hr"></span>
                 <div class="avtoriz">
-                    <lable>Еmail<span>*</span><input type="email" placeholder="Email"></lable>
-                    <lable>Пароль<span>*</span><input type="password" placeholder="Password"></lable>
-                    <lable><input type="checkbox">Запомнить меня</lable>
+                    <div class="block-mail">
+                        <label for="mail">Еmail<span>*</span></label>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input id="mail" type="email" placeholder="Email">
+                    </div>
+                    <div class="block-pass">
+                        <label for="pass">Пароль<span>*</span></label>
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input id="pass" type="password" placeholder="Password">
+                    </div>
+                    <label><input type="checkbox">Запомнить меня</label>
                     <p>Забыли пароль? <a href="#">Возобновить</a></p>
                 </div>
                 <button type="submit">Вход</button>

@@ -104,6 +104,7 @@
     border: 4px solid #eee;
     border-radius: 65px;
     border-top-left-radius: 0;
+    box-sizing: border-box;
 }
 
 .corner {
@@ -143,23 +144,28 @@
     align-items: flex-end;
 }
 
+.forma .avtoriz .fa {
+    display: none;
+}
+
 .avtoriz input {
     width: 236px;
     height: 25px;
-    margin: 0 20px 15px 15px;
+    margin: 0 20px 15px 10px;
     border: 2px solid #eee;
     box-sizing: border-box;
 }
 
-.avtoriz lable {
+.avtoriz label {
+    display: inline-block;
     font-size: 16px;
     font-weight: bold;
     font-family: bauhauscM, Arial, sans-serif;
 }
 
-.avtoriz lable:nth-child(3) {
+.avtoriz label:nth-child(3) {
     font-size: 12px;
-    margin-right: 155px;
+    margin-right: 150px;
 }
 
 .avtoriz input[type="checkbox"] {
@@ -171,7 +177,7 @@
 
 .avtoriz p {
     color: #9a9a9a;
-    margin: 7px 108px 0 0;
+    margin: 7px 101px 0 0;
     font-size: 12px;
     font-family: bauhauscM, Arial, sans-serif;
 }
@@ -251,6 +257,10 @@ button:hover {
 
     .menu li:first-child {
         margin-left: 0;
+    }
+
+    .menu li {
+        padding: 7px 50px;
     }
 
     .menu ul a {
@@ -341,78 +351,54 @@ button:hover {
 
     /*---star forma content---*/
     .forma {
-        width: 100%;
-        height: 250px;
-        left: 0;
-        margin: 0;
+        width: 310px;
+        height: 235px;
+        left: 50%;
+        margin-left: -155px;
         padding: 0;
-        text-align: center;
-        border: none;
-        border-radius: 0;
         z-index: -1;
     }
 
     .corner {
-        display: none;
+        margin: 10px 0 0 15px;
     }
 
-    .forma h1 {
-        margin: 0 0 10px 0;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: bauhauscM, Arial, sans-serif;
-    }
-
+    .forma h1,
     .forma > a {
-        margin: 0;
-        color: #3d974c;
-        font-size: 14px;
+        margin-left: 35px;
+        margin-bottom: 5px;
     }
 
     .forma .hr {
         display: block;
         width: 100%;
-        margin: 15px 0 0 0;
+        margin: 10px 0 0 0;
     }
 
-    .forma .avtoriz {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        text-align: left;
+    .forma .avtoriz .fa {
+        position: absolute;
+        display: block;
+        margin: 14px 0 0 15px;
+        color: #9a9a9a;
+    }
+
+    .avtoriz label {
+        display: none;
     }
 
     .avtoriz input {
         display: block;
-        width: 100%;
-        height: 32px;
-        margin: 0;
-        border: 2px solid #eee;
-        box-sizing: border-box;
+        margin: 10px 30px 5px 10px;
+        padding-left: 22px;
     }
 
-    .avtoriz lable {
-        margin: 10px 0 10px 0;
-    }
-
-    .avtoriz lable:nth-child(3) {
-        margin: 0 auto;
-        margin-bottom: 10px;
+    .avtoriz label:nth-child(3) {
+        margin: 10px auto 5px;
         display: inherit;
     }
 
     .avtoriz p {
         margin: 0 auto;
-    }
-
-    .avtoriz p a {
-        color: #3d974c;
-    }
-
-    button {
-        display: block;
-        position: absolute;
-        bottom: -25px;
     }
     /*---end forma content---*/
     /*---end content---*/
