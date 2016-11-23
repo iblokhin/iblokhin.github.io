@@ -1,0 +1,46 @@
+.jcarousel-wrapper {
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999; }
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left; }
+
+/** Carousel Controls **/
+/** Carousel Pagination **/
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 48%; }
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  text-indent: -9999px;
+  height: 14px;
+  min-width: 14px;
+  background: #fff;
+  padding: 3px;
+  margin-right: 2px; }
+
+.jcarousel-pagination a.active {
+  background: url("../../img/active-slide.png") #FFF 6px 6px no-repeat;
+  text-indent: -9999px; }
+
+/*# sourceMappingURL=carousel.css.map */
