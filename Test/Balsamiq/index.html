@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balsamiq</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">
+                <a href="#"><h1><span class="logE">E</span>xpenses <span class="logT">T</span>racker</h1></a>
+            </div> <!--end logo-->
+            <div class="menu">
+                <ul class="nav">
+                    <li class="active"><a href="#">Expenses</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Receipts</a></li>
+                    <li><a href="#">Approvals</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+                <div class="login">
+                    <ul class="log_menu">
+                        <li><a href="#">Profile</a>
+                            <ul class="log_drop_menu">
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="material-icons">details</i></li>
+                    </ul>
+                    <a href="#"><i class="material-icons person">person_outline</i></a>
+                </div> <!--end login-->
+            </div> <!--end menu-->
+        </header> <!--end header-->
+
+        <section class="content">
+            <h1>Manage Expenses</h1>
+            <div class="report">
+                <div class="new_report">
+                    <a href="#"><i class="material-icons add">add</i></a>
+                    <h3>Create New Report</h3>
+                </div>
+                <div class="quick_expense">
+                    <a href="#"><i class="material-icons add">add</i></a>
+                    <h3>Quick Expense</h3>
+                </div>
+                <div class="new_receipt">
+                    <a href="#"><i class="material-icons add add3">add</i></a>
+                    <h3>Upload New Receipt</h3>
+                </div>
+            </div> <!--end report-->
+            <div class="act_report">
+                <div class="act_rep_hed">
+                    <h2>Active Reports</h2>
+                    <div class="check_box">
+                        <input id="not_sub" type="checkbox">
+                        <label for="not_sub" >not submitted</label>
+                        <input id="sub" type="checkbox">
+                        <label for="sub">submitted</label>
+                    </div>
+                </div> <!--end act_rep_hed-->
+                <div class="sub_box">
+                    <div class="not_sub">
+                        <ul>
+                            <li>Not submitted</li>
+                            <li>London Sales Conference</li>
+                            <li>07/26/2016</li>
+                            <li>$1,413.45</li>
+                        </ul>
+                    </div> <!--end not_sub-->
+                    <div class="sub">
+                        <ul>
+                            <li>Submitted 07/26/2016</li>
+                            <li>Test expenses</li>
+                            <li>$32.00</li>
+                            <li>Pending: Henry Martin</li>
+                        </ul>
+                    </div> <!--end sub-->
+                </div> <!--end sub_box-->
+            </div> <!--end act_report-->
+        </section> <!--end content-->
+
+        <section class="available_exp">
+            <div class="expenses">
+                <div class="ex_head">
+                    <h3>Available expenses</h3>
+                    <div class="btn">
+                        <button class="move">Move</button>
+                        <button class="Delete">Delete</button>
+                    </div>
+                </div>
+                <div class="ex_table">
+                    <table>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Expense Detail</td>
+                            <td>Expense Type</td>
+                            <td>Source</td>
+                            <td>Date</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Great Western Trains</td>
+                            <td>Train</td>
+                            <td></td>
+                            <td>06/15/2016</td>
+                            <td>$37.80</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rules Restaurant</td>
+                            <td>Dinner</td>
+                            <td></td>
+                            <td>07/15/2016</td>
+                            <td>$232.63</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section> <!--end available_exp-->
+
+        <section class="available_rec">
+            <div class="receipt">
+                <div class="rec_head">
+                    <h3>Available Receipts</h3>
+                </div>
+                <div class="rec_box">
+                    <div class="upload_box">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="material-icons">search</i></a>
+                                <a href="#">Delete</a>
+                            </li>
+                            <li>Preview receipt image</li>
+                            <li>Uploaded file name.pdf</li>
+                        </ul>
+                    </div> <!--end upload_box-->
+                    <div class="upload_box">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="material-icons">search</i></a>
+                                <a href="#">Delete</a>
+                            </li>
+                            <li>Preview receipt image</li>
+                            <li>Uploaded file name.img</li>
+                        </ul>
+                    </div> <!--end upload_box-->
+                </div> <!--end rec_box-->
+            </div> <!--end receipt-->
+        </section> <!--end available_rec-->
+
+    </div> <!--end container-->
+
+</body>
+</html>
