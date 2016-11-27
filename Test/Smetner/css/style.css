@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'ProbaPro';
+    src: url('/font/probaprobold-webfont.woff2') format('woff2'),
+    url('/font/probaprobold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*start container*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    background-color: #ededed;
+}
+
+/*start title*/
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 66px;
+    border-bottom: 2px solid #fff;
+}
+
+.title span {
+    width: 28px;
+    height: 28px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 15px;
+    background-color: #2d953d;
+}
+
+.title h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'ProbaPro', arial, sans-serif;
+}
+
+/*end title*/
+
+/*start radio button*/
+
+.rButton {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+}
+
+.rButton h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 16px;
+}
+
+.rButton label {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 16px;
+}
+
+.rButton input [type="radio"] {
+    background-color: #fff;
+}
+
+.rButton label:nth-child(2) {
+    color: #333;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+
+/*end radio button*/
+
+/*start box Date and Time*/
+
+.box-Date-Time {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 0 20px;
+}
+
+.box-Date-Time label {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'ProbaPro', arial, sans-serif;
+}
+
+.box-Date {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.box-Date input {
+    width: 185px;
+    padding: 8px 25px 8px 20px;
+    color: #656565;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 16px;
+}
+
+.box-Date input::-webkit-input-placeholder {
+    color: #656565;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 16px;
+}
+
+.box-Date .fa-calendar {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    z-index: 1;
+    color: #5b9546;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box-Time {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    position: relative;
+}
+
+.box-Time input {
+    width: 185px;
+    padding: 8px 25px 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'ProbaPro', arial, sans-serif;
+    background-color: #5b9546;
+    border-radius: 4px;
+}
+
+.box-Time .fa-angle-down {
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*end box Date and Time*/
+
+/*start box Contacts*/
+
+.box-Contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 40px 20px 0 20px;
+}
+
+.box-Contacts label {
+    color: #333;
+    font-size: 14px;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-weight: bold;
+}
+
+.box-Contacts input {
+    width: 230px;
+    padding: 12px 0 12px 0;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.box-Contacts input[type="email"],
+.box-Contacts input[type="tel"] {
+    width: 264px;
+}
+
+.box-Contacts input::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #656565;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 16px;
+}
+
+/*end box Contacts*/
+
+/*start text field*/
+
+.field {
+    width: 1060px;
+    margin: 38px 0 0 20px;
+}
+
+.field p {
+    color: #333;
+    font-family: 'ProbaPro', arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.field-Text {
+    width: 1060px;
+    height: 284px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*end text field*/
+
+/*start button submit*/
+
+.btn {
+    color: #fff;
+    float: right;
+    margin: 0 20px 20px 0;
+    padding: 10px 20px;
+    background-color: #5b9546;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+/*end button submit*/
+
+/*end container*/
