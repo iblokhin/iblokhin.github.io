@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ogloblin</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--<div class="container">-->
+        <header class="header" id="header"><!--start header-->
+            <div class="header-top">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                <h1>владимир оглоблин</h1>
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            </div>
+            <div id ="myCarousel" class="carousel slide"><!--start carousel-->
+                <!--location slide-indication-->
+                <ol class="carousel-indicators">
+                    <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "1"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "2"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "3"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "4"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "5"></li>
+                    <li data-target = "#myCarousel" data-slide-to = "6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--container images-->
+                    <div class="item active">
+                        <img src="img/sea.jpg" alt="Sea">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/crag.jpg" alt="Crag">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/forest.jpg" alt="Forest">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/house.jpg" alt="House">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/mount.jpg" alt="Mount">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/hills.jpg" alt="Hills">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/water.jpg" alt="Water">
+                        <div class="carousel-caption">
+                            <h3>одинокое баренцево море</h3>
+                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <!--control prev, next slide-->
+                <a class="carousel-control left" href="#myCarousel" data-slide ="prev">
+                    <span class ="icon-prev"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide ="next">
+                    <span class ="icon-next"></span>
+                </a>
+            </div><!--end carousel-->
+            <div class="header-bottom">
+                <div class="language">
+                    <p>RU</p>
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </div>
+                <div class="scroll-dawn" id="scroll_dawn">
+                    <a href="#preface">
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </header><!--end header-->
+
+        <section class="preface" id="preface"><!--start section preface-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 preface-title">
+                        <h3>Предисловие автора</h3>
+                    </div>
+                    <div class="col-md-8 preface-text">
+                        <div class="slider">
+                            <ul>
+                                <li>
+                                    <div class="slider-item">
+                                        <p>моё имя владимир оглоблин.</p>
+                                        <p>Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому, что с ней происходит.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slider-item">
+                                        <p>природа стала моим близким другом и наставником, моим успокоительным средством и местом, где я могу понять, кто я такой.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slider-item">
+                                        <p>Если Вам когда-нибудь удавалось открывать для себя новые горизонты и сохранять эту потребность постоянно, то Вы поймете меня…</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slider-item">
+                                        <p>моё имя владимир оглоблин.</p>
+                                        <p>Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому, что с ней происходит.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slider-item">
+                                        <p>моё имя владимир оглоблин.</p>
+                                        <p>Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому, что с ней происходит.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>биография<a href="#" class="preface-arrow-right" aria-hidden="true"></a></p>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section preface-->
+
+        <section class="gallery" id="gallery"><!--start section gallery-->
+            <div class="gallery-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 gallery-top-left">
+                            <p id="tagid">ТЭГИ
+                                <span class="gallery-arrow-down"></span>
+                                <ul class="tab-tag">
+                                    <li><a href="#">Река Хета</a></li>
+                                    <li><a href="#">Метеоритный кратер</a></li>
+                                    <li><a href="#">Пёстые скалы</a></li>
+                                    <li><a href="#">Таймыр</a></li>
+                                    <li><a href="#">Мамонт</a></li>
+                                    <li><a href="#">Плато</a></li>
+                                    <li><a href="#">Запольярье</a></li>
+                                    <li><a href="#">Волк</a></li>
+                                    <li><a href="#">Миграция</a></li>
+                                    <li><a href="#">Народ</a></li>
+                                    <li><a href="#">Мамонт</a></li>
+                                    <li><a href="#">Хатанга</a></li>
+                                    <li><a href="#">Музей</a></li>
+                                    <button class="close" type="button">X</button>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-4 gallery-top-title">
+                            <h3>галерея работ</h3>
+                            <p>все альбомы <span class="gallery-arrow-right"></span></p>
+                        </div>
+                        <div class="col-md-4 gallery-top-right">
+                            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end gallery-top-->
+            <div class="gallery-img"><!--start gallery-img-->
+                <div class="gallery-img-top">
+                    <img class="cover" src="img/yakutia.jpg" alt="yakutia">
+                    <img class="cover" src="img/kolima.jpg" alt="kolima">
+                </div>
+                <div class="gallery-img-mid">
+                    <img class="cover" src="img/altai.jpg" alt="altai">
+                </div>
+                <div class="gallery-img-bottom">
+                    <img class="cover" src="img/latviya.jpg" alt="latviya">
+                    <img class="cover" src="img/kharkov.jpg" alt="kharkov">
+                </div>
+            </div><!--end gallery-img-->
+            <div class="gallery-bottom">
+                <h3>Показать ещё <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></h3>
+            </div>
+        </section><!--end section gallery-->
+
+        <section class="expedition" id="expedition"><!--start section expedition-->
+            <div class="exped-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 exped-top-left">
+                            <p>2012 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+                        </div>
+                        <div class="col-md-5 exped-top-title">
+                            <h3>ФОТОЭКСПЕДИЦИИ</h3>
+                            <p>все записи <a href="#" class="exped-arrow-right"></a></p>
+                        </div>
+                        <div class="col-md-3 exped-top-right">
+                            <a class="carousel-control left" href="#myCarousel1" data-slide ="prev">
+                                <a href="#" class="expedt-arrow-left"></a>
+                            </a>
+                            <span class="page1" id="page1">1</span>
+                            <span class="page8" id="page8">8</span>
+                            <a class="carousel-control right" href="#myCarousel1" data-slide ="next">
+                                <a href="#" class="expedt-arrow-right"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exped-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 exped-carousel">
+                            <p>01</p>
+                            <div id ="myCarousel1" class="carousel slide"><!--start carousel-->
+                                <!--location slide-indication-->
+                                <ol class="carousel-indicators">
+                                    <li data-target = "#myCarousel1" data-slide-to = "0" class="active"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "1"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "2"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "3"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "4"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "5"></li>
+                                    <li data-target = "#myCarousel1" data-slide-to = "6"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <!--container images-->
+                                    <div class="item active">
+                                        <img src="img/sea.jpg" alt="Sea">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/crag.jpg" alt="Crag">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/forest.jpg" alt="Forest">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/house.jpg" alt="House">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/mount.jpg" alt="Mount">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/hills.jpg" alt="Hills">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/water.jpg" alt="Water">
+                                        <div class="carousel-caption">
+                                            <h3>одинокое баренцево море</h3>
+                                            <h4>смотреть альбом <a href="#" class="item-icon"></a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--end carousel-->
+                        </div>
+                        <div class="col-md-4 exped-text">
+                            <p>2012, 2014</p>
+                            <p>Сплав по рекам Амбардах и Маймеча <a href="#" class="exped-text-arrow"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section expedition-->
+
+        <section class="diary" id="diary"><!--start section diary-->
+            <div class="diary-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 diary-title">
+                            <h3>дневник путешественника</h3>
+                            <p>все записи <a href="#" class="diary-arrow"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diary-content">
+                <div class="container">
+                    <div class="row diary-row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 diary-cont-left">
+                            <div class="diary-left-top">
+                                <h4>01</h4>
+                                <p class="diary-cont-title">Сплав по рекам амбардах и маймеча</p>
+                                <img src="img/travelling-2.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                            <div class="diary-left-bottom">
+                                <h4>03</h4>
+                                <p class="diary-cont-title">Родная харьковщина.</p>
+                                <p class="diary-cont-title">Её бескрайние просторы.</p>
+                                <img src="img/travelling-3.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 diary-cont-center">
+                            <div class="diary-center-top">
+                                <h4>02</h4>
+                                <p class="diary-cont-title">Родная харьковщина.</p>
+                                <p class="diary-cont-title">Часть 1.</p>
+                                <img src="img/travelling-3.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                            <div class="diary-center-bottom">
+                                <h4>01</h4>
+                                <p class="diary-cont-title">Сплав по рекам амбардах и маймеча.</p>
+                                <img src="img/travelling-4.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 diary-cont-right">
+                            <div class="diary-right-top">
+                                <h4>02</h4>
+                                <p class="diary-cont-title">Родная харьковщина.</p>
+                                <p class="diary-cont-title">Часть 1.</p>
+                                <img src="img/travelling-1.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                            <div class="diary-right-bottom">
+                                <h4>03</h4>
+                                <p class="diary-cont-title">Музей мамонта в заполярном поселке хатанга.</p>
+                                <img src="img/travelling-3.jpg" alt="">
+                                <p class="travel-year">2012</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section diary-->
+
+        <section class="news" id="news"><!--start section news-->
+            <div class="container">
+                <div class="row news-top">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <h3>Новости</h3>
+                    </div>
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <p>все новости <a href="#" class="news-arrow-icon"></a></p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row news-content">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 news-col1">
+                        <h3>01</h3>
+                        <h4>Презентация поездки в грузию</h4>
+                        <p>Вот и настала осень! И это даже не сентябрь, когда солнце играет в первых желтых листьях, а глубокое синее небо удивляет свое прозрачностью. Все чаще идут дожди, а низкие серые тучи напоминают, что недалеко и до первых заморозков.</p>
+                        <span>12.04.2012</span>
+                    </div>
+                    <div class="col-md-4 news-col2">
+                        <h3>02</h3>
+                        <h4>поездка в турцию. запись на 2017 год.</h4>
+                        <p>Вот и настала осень! И это даже не сентябрь, когда солнце играет в первых желтых листьях, а глубокое синее небо удивляет свое прозрачностью. Все чаще идут дожди, а низкие серые тучи напоминают, что недалеко и до первых заморозков.</p>
+                        <span>12.04.2012</span>
+                    </div>
+                    <div class="col-md-3 news-col3">
+                        <h3>03</h3>
+                        <h4>фотошкола.<br>сборы 24 сентрября. быть всем</h4>
+                        <p>Вот и настала осень! И это даже не сентябрь, когда солнце играет в первых желтых листьях, а глубокое синее небо удивляет свое прозрачностью. Все чаще идут дожди, а низкие серые тучи напоминают, что недалеко и до первых заморозков.</p>
+                        <span>12.04.2012</span>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section><!--end section news-->
+        <footer class="footer" id="footer"><!--start footer-->
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2 footer-col-left">
+                        <h3>Биография <a  href="#" class="footer-arrow-right"></a></h3>
+                        <p>&copy;Vladimir Ogloblin. All rights reserved</p>
+                    </div>
+                    <div class="col-md-6 footer-col-center">
+                        <h3>владимир оглоблин</h3>
+                        <p>
+                            <a href="#">facеbook</a>
+                            |
+                            <a href="#">linkеdin</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 footer-col-right">
+                        <h3>Наверх <a href="#header" class="footer-arrow-up"></a></h3>
+                        <p>Developed by blckbc</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </footer><!--end footer-->
+    <!--</div>&lt;!&ndash;end main container&ndash;&gt;-->
+</body>
+</html>
