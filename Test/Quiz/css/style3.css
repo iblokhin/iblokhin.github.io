@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    background-color: #fff;
+    /*width: 100%;*/
+}
+
+.header {
+    background: url("../img/bg3.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height: 772px;
+    /*width: 100%;*/
+}
+
+.header .logo {
+    margin: 35px 0 0 100px;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 105px 0 0 0;
+}
+
+.header-bottom .congrat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+.header-bottom .congrat h1 {
+    margin-bottom: 20px;
+    color: #ff7200;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.header-bottom .congrat p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.header-bottom .consult {
+    margin: 60px 0 0 0;
+    background: url("../img/ellips.png")0 5px no-repeat;
+}
+
+.header-bottom .consult img {
+    padding: 16px 12px 15px 12px;
+}
+
+.header-bottom .comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    height: 90px;
+    margin: -10px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+.header-bottom .comment p {
+    line-height: 24px;
+    color: #fff;
+    font-size: 20px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 0 0;
+}
+
+.footer p {
+    line-height: 32px;
+    color: #000;
+    font-size: 22px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.footer p .fa-facebook-official {
+    font-size: 50px;
+    color: #3765a3;
+    vertical-align: middle;
+}
+
+.footer p .fa-youtube {
+    font-size: 50px;
+    color: #ff0000;
+    vertical-align: middle;
+}
+
+.footer .box-arrow {
+    height: 120px;
+    width: 250px;
+    margin: 15px 128px 0 0;
+}
+
+.footer .arrow {
+    display: block;
+    height: 100%;
+    background: url("../img/arrow.png") 0 0 no-repeat;
+}
+
+@media (min-width: 1025px) and (max-width: 1185px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 100%;
+    }
+
+    .header-bottom .congrat {
+        width: 380px;
+        height: 120px;
+    }
+
+    .header-bottom .comment {
+        width: 600px;
+        height: 80px;
+    }
+
+    .header-bottom .comment p {
+        font-size: 18px;
+    }
+
+    .header-bottom .congrat h1 {
+        font-size: 32px;
+    }
+
+    .header-bottom .congrat p {
+        font-size: 18px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer p {
+        width: 600px;
+        z-index: 1;
+    }
+
+    .footer p .fa-facebook-official {
+        font-size: 44px;
+    }
+
+    .footer p .fa-youtube {
+        font-size: 44px;
+    }
+
+    .footer .box-arrow {
+        margin: -25px -260px 0 0;
+        z-index: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .header .logo {
+        margin: 35px 0 0 0;
+        text-align: center;
+    }
+
+    .header-bottom .congrat {
+        width: 380px;
+        height: 110px;
+    }
+
+    .header-bottom .congrat h1 {
+        font-size: 30px;
+    }
+
+    .header-bottom .congrat p {
+        font-size: 18px;
+    }
+
+    .header-bottom .comment {
+        width: 460px;
+    }
+
+    .header-bottom .comment p {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .footer {
+        margin-bottom: 50px;
+    }
+
+    .footer p {
+        width: 450px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer p .fa-facebook-official {
+        font-size: 40px;
+    }
+
+    .footer p .fa-youtube {
+        font-size: 40px;
+    }
+
+    .footer .box-arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .header .logo {
+        margin: 35px 0 0 0;
+        text-align: center;
+    }
+
+    .header-bottom .congrat {
+        width: 280px;
+        height: 90px;
+    }
+
+    .header-bottom .congrat h1 {
+        font-size: 30px;
+    }
+
+    .header-bottom .congrat p {
+        font-size: 16px;
+    }
+
+    .header-bottom .comment {
+        width: 280px;
+        height: 120px;
+    }
+
+    .header-bottom .comment p {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 10px 0 10px;
+    }
+
+    .footer {
+        margin-bottom: 50px;
+    }
+
+    .footer p {
+        width: 300px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .footer p .fa-facebook-official {
+        font-size: 44px;
+    }
+
+    .footer p .fa-youtube {
+        font-size: 38px;
+    }
+
+    .footer .box-arrow {
+        display: none;
+    }
+
+}

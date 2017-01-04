@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*height: 100%;*/
+    height: 100vh;
+    background-color: #fff;
+}
+
+.col-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*width: 505px;*/
+    width: 60%;
+    height: 100%;
+}
+
+.col-img img {
+    display: block;
+    height: 100%;
+    /*width: 550px;*/
+}
+
+.col-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*width: 890px;*/
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.col-form .form {
+    margin: 70px 0 0 0;
+}
+
+.col-form .form form {
+    width: 420px;
+    margin-right: 20px;
+}
+
+.col-form .form h1 {
+    margin: 20px 0 30px 0;
+    color: #6a6a6a;
+    font-size: 28px;
+    text-align: center;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .form p {
+    color: #ababab;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .box-contacts {
+    margin: 0 0 20px 0;
+}
+
+.col-form .box-contacts label {
+    display: block;
+    margin: 20px 0 0 0;
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .box-contacts input {
+    display: block;
+    margin: 10px 0 0 0;
+    width: 420px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #dadada;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .box-contacts input::-webkit-input-placeholder {
+    padding-left: 15px;
+    color: #b7b7b7;
+    font-size: 16px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .box-contacts input::-moz-placeholder {
+    padding-left: 15px;
+    color: #b7b7b7;
+    font-size: 16px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .form span {
+    margin: 40px 0 0 0;
+    color: #ababab;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .form .btn-test {
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 60px;
+    margin: 38px auto 20px;
+    background-color: #ff7200;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 2px 7px 2px #999999;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: robotoregular, Arial, sans-serif;
+}
+
+.col-form .form .btn-test:active,
+.col-form .form .btn-test:hover,
+.col-form .form .btn-test:focus {
+    color: #c3c3c3;
+}
+
+@media (min-width: 1186px) and (max-width: 1400px) {
+    .container {
+        height: 100%;
+    }
+
+    .col-form .form form {
+        width: 400px;
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    .col-form .box-contacts input {
+        width: 400px;
+    }
+
+    .col-img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1185px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        margin-top: 20px;
+    }
+
+    .col-img {
+        width: 100%;
+    }
+
+    .col-img img {
+        width: 100%;
+    }
+
+    .col-form {
+        align-items: center;
+        /*justify-content: flex-start;*/
+        width: 100%;
+    }
+
+    .col-form .form {
+        margin: 20px 0 0 25px;
+    }
+
+
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        margin: 0;
+    }
+
+    .col-form {
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .col-form .form {
+        margin: 30px 0 0 25px;
+    }
+
+    .col-form .form form {
+        width: 400px;
+        margin: 0 20px 0 0;
+    }
+
+    .col-form .box-contacts label {
+        margin: 15px 0 0 0;
+    }
+
+    .col-form .box-contacts input {
+        width: 400px;
+        height: 30px;
+    }
+
+    .col-form .form h1 {
+        margin: 0 0 15px 0;
+        font-size: 26px;
+    }
+
+    .col-form .form span {
+        display: block;
+        margin: 0 0 0 0;
+        width: 370px;
+    }
+
+    .col-form .form .btn-test {
+        margin: 30px auto 15px;
+    }
+
+    .col-img {
+        width: 100%;
+    }
+
+    .col-img img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .container {
+        height: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+    }
+
+    .col-form {
+        align-items: center;
+    }
+
+    .col-form .form span {
+        display: block;
+    }
+
+    .col-img {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+    }
+
+    .col-form {
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .col-form .form form {
+        width: 380px;
+    }
+
+    .col-form .form h1 {
+        font-size: 24px;
+    }
+
+    .col-form .box-contacts input {
+        width: 380px;
+        height: 30px;
+    }
+
+    .col-form .form span {
+        display: block;
+        margin: 40px 10px 0 10px;
+    }
+
+    .col-img {
+        display: none;
+    }
+
+    .col-form .form .btn-test {
+        width: 320px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+    }
+
+    .col-form {
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .col-form .form form {
+        width: 300px;
+    }
+
+    .col-form .form h1 {
+        width: 280px;
+        font-size: 20px;
+        margin: 20px 0 30px 10px;
+    }
+
+    .col-form .box-contacts input {
+        width: 300px;
+        height: 25px;
+    }
+
+    .col-form .form span {
+        display: block;
+    }
+
+    .col-img {
+        display: none;
+    }
+
+    .col-form .form .btn-test {
+        width: 280px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
