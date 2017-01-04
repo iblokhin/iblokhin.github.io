@@ -158,6 +158,13 @@ body {
     display: inherit;
 }
 
+.scroll-dawn {
+    position: relative;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+}
+
 .header-bottom .language:hover p,
 .header-bottom .language:hover .glyphicon-menu-down,
 .scroll-dawn:hover .glyphicon-chevron-down {
@@ -183,13 +190,40 @@ body {
 }
 
 .header-bottom .glyphicon-chevron-down {
-    display: block;
-    top: 0;
-    margin-right: 70px;
-    line-height: 15px;
-    font-size: 10px;
+    /*width:40px;*/
+    /*height:40px;*/
+    position:absolute;
+    padding: 20px 40px 10px;
+    /*top:20px;*/
+    /*margin:auto;*/
+    right: 30px;
+    /*bottom:0;*/
+    /*left:0;*/
+    -webkit-animation:3s arrow infinite ease;
+    animation:3s arrow infinite ease;
     color: #fff;
     cursor: pointer;
+    /*border-right:2px solid #FFF;*/
+    /*border-bottom:2px solid #FFF;*/
+    /*-webkit-transform:rotate(45deg);*/
+    /*transform:rotate(45deg);*/
+}
+
+@-webkit-keyframes arrow {
+    0%,100% {
+        top:50px;
+    }
+    50% {
+        top:80px;
+    }
+}
+@keyframes arrow {
+    0%,100% {
+        top:50px;
+    }
+    50% {
+        top:80px;
+    }
 }
 
 .scroll-dawn .glyphicon-chevron-down:last-child {
@@ -1108,7 +1142,8 @@ footer {
     opacity: .7;
 }
 
-.footer-arrow-up {
+.footer-arrow-up h3:after {
+    content: " ";
     position: absolute;
     width: 6px;
     height: 20px;
