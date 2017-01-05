@@ -49,7 +49,8 @@ $(document).ready(function(){
         $('.search-fields').val('');
     });
 
-    $('.search-fields').keypress(function () {
+    $('.search-fields').keypress(function (e) {
+        e.preventDefault();
         if (event.keyCode == 13) {
             search();
             $('.search-fields').val('');
