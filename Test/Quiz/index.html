@@ -16,7 +16,10 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <form id="idForm" method="POST" action="aj.php">
+    <form id="idForm" class="main-form" action="?act=submit" method="post" name="quiz_form" enctype="multipart/form-data">
+    <input type="hidden" name="formName" value="quiz_form">
+        <!--{HiddenFields}-->
+
         <div class="container"><!-- start container-->
             <div class="col-question">
                 <div class="title-question">

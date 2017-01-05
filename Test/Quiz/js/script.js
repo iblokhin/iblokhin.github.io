@@ -329,7 +329,18 @@ $(function() {
         $('.js-send').hide(); $('.js-loader').show(); // show loader
         // send to backend (for subsribe, send mail...)
 
-        var $form = $(this);
+        $.ajax({
+                type: 'POST',
+                url: 'aj.php',
+                cache: false,
+                dataType: 'json',
+                data: $('#idForm').serialize(),
+                success: function(data) { console.log('success'); window.location.href = '?pg=thx'; },
+                fail: function() { $('.js-send').show(); $('.js-loader').hide(); console.log('fail'); } //// hide loader 
+        });
+
+
+        /*var $form = $(this);
         $.ajax({
             type: $form.attr('method'),
             url: $form.attr('action'),
@@ -351,7 +362,7 @@ $(function() {
             console.log('fail');
         });
         //отмена действия по умолчанию для кнопки submit
-        e.preventDefault();
+        e.preventDefault();*/
     });
 
 
