@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: prefaceHeight}, 1500);
     }
 
-    function display_scroll_up() {
+    /*function display_scroll_up() {
         preface.style.display = 'none';
         gallery.style.display = 'none';
         expedition.style.display = 'none';
@@ -38,7 +38,7 @@ $(document).ready(function () {
         news.style.display = 'none';
         footer.style.display = 'none';
     }
-
+*/
     $(window).scroll(function() {
         var top_scroll = $(this).scrollTop();
         var prefaceHeight = $('#preface').offset().top - $(window).scrollTop();
@@ -69,16 +69,33 @@ $(document).ready(function () {
     var cover = $('.cover');
     $(cover).each(function (index) {
         $(this).mouseover(function () {
-            $(cover[index]).css({
+            /*$(cover[index]).css({
                 transition: '.5s',
-                opacity: .7
-            })
+                backgroundColor: 'rgba(0, 0, 0, .7)'
+            })*/
+
+            // $('.review').show(500);
+            /*$(cover[index]).find('img').css({
+
+            })*/
         });
         $(this).mouseout(function () {
-            $(cover[index]).css({
+            /*$(cover[index]).css({
                 transition: '.5s',
-                opacity: 1
-            })
+                backgroundColor: 'rgba(0, 0, 0, 1)'
+            })*/
+            // $(this).find('.review').hide();
+            // $(cover[index]).find('.review').hide();
+        });
+    });
+
+    $('.review').each(function (index) {
+        $(this).mouseout(function () {
+            /*$(cover[index]).css({
+                transition: '.5s',
+                backgroundColor: 'rgba(0, 0, 0, 1)'
+            })*/
+            // $(this[index]).hide();
         });
     });
 
