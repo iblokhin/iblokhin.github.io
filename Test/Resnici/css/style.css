@@ -1,0 +1,554 @@
+@font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cormorantinfant-bolditalic';
+    src: url('../fonts/cormorantinfant-bolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/cormorantinfant-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fa-viber';
+    src:url('../fonts/fa-viber.eot?-3dwksg');
+    src:url('../fonts/fa-viber.eot?#iefix-3dwksg') format('embedded-opentype'),
+    url('../fonts/fa-viber.ttf?-3dwksg') format('truetype'),
+    url('../fonts/fa-viber.woff?-3dwksg') format('woff'),
+    url('../fonts/fa-viber.svg?-3dwksg#fa-viber') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    width: 100%;
+    height: 670px;
+    background: url("../img/bg_header.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.header-top {
+    width: 100%;
+    height: 670px;
+    background: url("../img/bg_header.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.header-top .col-md-5,
+.header-top .col-md-7 {
+    padding: 0;
+}
+
+.header-top img {
+    margin: 0 0 0 -138px;
+    z-index: 0;
+}
+
+.header-top-right .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 34px 0 0 27px;
+}
+
+.header-top-right .menu li {
+    /*padding: 0 14px 0 0;*/
+}
+
+.header-top-right .menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'robotothin', sans-serif;
+    /*text-decoration: none;*/
+}
+
+.header-top-right .menu li a:hover {
+    /*color: #fff;*/
+    text-decoration: none;
+}
+
+.header-top-right h1 {
+    margin: 52px 0 36px 17px;
+    /*text-align: center;*/
+    color: #fff;
+    font-family: "cormorantinfant-bolditalic", sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header-top-right > p {
+    margin: 0 0 0 15px;
+    line-height: 43px;
+    color: #fff;
+    font-family: "robotolight", sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.header-top-right .reserve {
+    position: relative;
+    top: 42px;
+    left: 71px;
+    width: 350px;
+    height: 295px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    background-clip: padding-box;
+    background-color: #631faa;
+}
+
+.header-top-right .reserve > p {
+    margin: 0 -3px 12px 0;
+    padding: 7px 0 0 0;
+    color: #fff;
+    font-family: "robotolight", sans-serif;
+    font-size: 22px;
+}
+
+.header-top-right .reserve .reserve-contacts {
+    margin: 0 10px 0 10px;
+    background-color: #fff;
+}
+
+.header-top-right .reserve .reserve-contacts li:first-child {
+    padding: 11px 0 10px 0;
+}
+
+.header-top-right .reserve .reserve-contacts .reserve-tel {
+    color: #631fa9;
+    font-family: "robotolight", sans-serif;
+    font-size: 22px;
+    margin: 0 0 0 -12px;
+}
+
+.header-top-right .reserve .reserve-contacts .fa-phone {
+    color: #631fa9;
+    font-size: 17px;
+    margin: 0 9px 0 -4px;
+}
+
+.header-top-right .reserve .reserve-contacts p {
+    margin: 9px 0 0 37px;
+    padding: 0 4px 0 0;
+    text-indent: 8px;
+    color: #631fa9;
+    font-family: "robotolight", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 255px;
+    text-align: center;
+}
+
+.header-top-right .reserve .reserve-contacts .fa-whatsapp {
+    margin: 0 0 0 -10px;
+    padding: 6px 8px 6px 8px;
+    font-size: 28px;
+    vertical-align: bottom;
+    background: #2ca815;
+    color: #fff;
+}
+
+.header-top-right .reserve .reserve-contacts .fa-whatsapp:hover {
+    color: rgba(59, 255, 24, 0.55);
+}
+
+.header-top-right .reserve .reserve-contacts .fa-viber {
+    width: 38px;
+    height: 38px;
+    margin: 0 0 0 3px;
+    background: url("../img/viber-icon.png") 0 0 no-repeat;
+    font-size: 0;
+}
+
+.header-top-right .reserve .reserve-contacts .fa-viber:before {
+    font-family: 'fa-viber';
+    content: "\e666";
+    font-size: 12px;
+    position: relative;
+    top: 12px;
+    left: 0;
+    background: #7d3daf;
+    color: #fff;
+    padding: 1px;
+}
+
+.header-top-right .reserve .reserve-contacts .fa-viber:hover:before  {
+    color: rgb(212, 157, 210);
+}
+
+.header-top-right .reserve .reserve-contacts button {
+    margin: 13px 0 21px 0;
+    padding: 7px 21px 8px 21px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background-color: #1bb100;
+    color: #fff;
+    font-family: "robotobold", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-top-right .reserve .reserve-contacts button:hover {
+    background-color: #7d3daf;
+    color: #fff;
+    transition: .5s;
+}
+
+.header-bottom {
+    width: 100%;
+    height: 140px;
+    background-color: rgb(18, 20, 24);
+}
+
+.header-bottom .col-md-9{
+    z-index: 1;
+}
+
+.header-bottom h2 {
+    margin: 21px 0 0 3px;
+    color: #fff;
+    font-family: "cormorantinfant-bolditalic", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header-bottom p {
+    margin: -1px 0 0 7px;
+    color: #fff;
+    font-family: 'robotothin', sans-serif;
+    font-size: 28px;
+}
+
+.header-bottom img {
+    margin: 0 0 0 -212px;
+}
+
+/*end header*/
+
+/*start section why*/
+.why {
+
+}
+
+.why h2 {
+    color: #631fa9;
+    font-family: 'robotothin', sans-serif;
+    font-size: 47px;
+    margin: 25px 0 0 4px;
+    text-transform: uppercase;
+}
+
+.why .line {
+    display: inline-block;
+    width: 328px;
+    height: 1px;
+    background-color: #631fa9;
+    vertical-align: middle;
+    position: relative;
+    left: -25px;
+    top: -5px;
+}
+
+.why .line:last-child {
+    left: 25px;
+}
+
+.why-list {
+    display: flex;
+    margin: 40px 0 0 0;
+}
+
+.why-list li {
+    text-align: center;
+}
+
+.why-list li:first-child {
+    position: relative;
+    left: -29px;
+}
+
+.why-list li:first-child h4 {
+    margin: 17px 0 13px 4px;
+}
+
+.why-list li:first-child p {
+    margin: -2px 0 0 16px;
+    line-height: 24px;
+    padding: 0 15px 0 0;
+}
+
+.why-list li:nth-child(2) {
+    position: relative;
+    left: -7px;
+    top: -2px;
+}
+
+.why-list li:nth-child(2) h4 {
+    margin: 20px 0 10px -4px;
+}
+
+.why-list li:nth-child(2) p {
+    margin: -1px 0 0 8px;
+    line-height: 24px;
+}
+
+.why-list li:nth-child(3) {
+    position: relative;
+    top: 2px;
+    left: 8px;
+}
+
+.why-list li:nth-child(3) p {
+    margin: -4px 0 0 18px;
+    line-height: 24px;
+}
+
+.why-list li:nth-child(3) h4 {
+    margin: 15px 0 12px 0;
+}
+
+.why-list li:last-child {
+    position: relative;
+    left: 18px;
+    top: 8px;
+}
+
+.why-list li:last-child h4 {
+    margin: 9px 0 11px -6px;
+}
+
+.why-list li:last-child p {
+    margin: 10px -10px 14px 3px;
+    line-height: 24px;
+}
+
+.why-list .icon-quality {
+    display: block;
+    height: 52px;
+    width: 50px;
+    margin: 0 auto;
+    background: url("../img/icons-why.png") 4px 0 no-repeat;
+}
+
+.why-list .icon-safety {
+    display: block;
+    height: 52px;
+    width: 62px;
+    margin: 0 auto;
+    background: url("../img/icons-why.png") -45px 0 no-repeat;
+}
+
+.why-list .icon-beauty {
+    display: block;
+    height: 52px;
+    width: 42px;
+    margin: 0 auto;
+    background: url("../img/icons-why.png") -105px 0 no-repeat;
+}
+
+.why-list .icon-comfort {
+    display: block;
+    height: 52px;
+    width: 60px;
+    margin: 0 auto;
+    background: url("../img/icons-why.png") -148px 0 no-repeat;
+}
+
+.why-list h4 {
+    margin: 17px 0 12px 0;
+    color: #631fa9;
+    font-family: "robotobold", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.why-list p {
+    padding: 0 10px 0 0;
+    color: #333;
+    font-family: 'robotothin', sans-serif;
+    font-size: 16px;
+}
+
+.why-num {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0 57px 0;
+}
+
+.why-num li {
+    position: relative;
+    text-align: center;
+}
+
+.why-num li p {
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.why-num li:first-child {
+    left: -63px;
+}
+
+.why-num li:first-child p {
+    margin: 8px 0 0 0;
+    padding: 0 3px 0 0;
+    width: 320px;
+}
+
+.why-num li:nth-child(2) {
+    left: -21px;
+}
+
+.why-num li:nth-child(2) p {
+    width: 230px;
+    margin: 8px 0 0 0;
+}
+
+.why-num li:last-child {
+    left: 43px;
+}
+
+.why-num li:last-child p {
+    margin: 8px 0 0 0;
+    width: 200px;
+    text-indent: 3px;
+}
+
+.why-num span {
+    color: #631fa9;
+    font-family: 'robotoblack', sans-serif;
+    font-size: 48px;
+}
+
+/*.why-bottom*/
+.why .why-bottom {
+    height: 170px;
+    width: 100%;
+    background-color: #631fa9;
+}
+
+.why .why-bottom img{
+    position: relative;
+    left: -236px;
+}
+
+.why .why-bottom .col-md-8 {
+    padding: 0;
+}
+
+.why .why-bottom h4 {
+    margin: 21px 0 0 -11px;
+    color: #fff;
+    font-family: "cormorantinfant-bolditalic", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.why .why-bottom p {
+    margin: 12px 0 0 -11px;
+    color: #fff;
+    font-family: 'robotothin', sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+/*start section three-plus*/
+
+.three-plus {
+    background: url("../img/bg-three-plus.png") 0 0 no-repeat;
+    background-size: cover;
+    height: 1094px;
+    /*padding: 0;*/
+}
+
+.three-plus h2 {
+    margin: 53px 0 0 -12px;
+    color: #fff;
+    font-family: 'robotothin', sans-serif;
+    font-size: 47px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.three-plus .line {
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+    left: -25px;
+    top: -5px;
+}
+
+.three-plus .line:last-child {
+    left: 25px;
+}
+
+.three-plus h4 {
+    /*margin: 53px 0 0 -12px;*/
+    /*text-align: center;*/
+    color: #fff;
+    font-family: "robotoblack_italic", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.three-plus p {
+    color: #cf9eec;
+    font-family: 'robotothin', sans-serif;
+    font-size: 16px;
+}
