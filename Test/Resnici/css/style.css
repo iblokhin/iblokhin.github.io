@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'robotothin';
+    font-family: 'roboto_thin';
     src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
     url('../fonts/roboto-thin-webfont.woff') format('woff');
     font-weight: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'robotoblack';
+    font-family: 'roboto_black';
     src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
     url('../fonts/roboto-black-webfont.woff') format('woff');
     font-weight: normal;
@@ -39,9 +39,25 @@
 }
 
 @font-face {
-    font-family: 'robotoblack_italic';
+    font-family: 'roboto_black_italic';
     src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
     url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_regular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_italic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -107,7 +123,7 @@
 .header-top-right .menu li a {
     color: #fff;
     font-size: 16px;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     /*text-decoration: none;*/
 }
 
@@ -141,7 +157,7 @@
     left: 71px;
     width: 350px;
     height: 295px;
-    margin: 0 auto;
+    margin: 0 auto 42px;
     text-align: center;
     border-radius: 3px 3px 0 0;
     background-clip: padding-box;
@@ -267,7 +283,7 @@
 .header-bottom p {
     margin: -1px 0 0 7px;
     color: #fff;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 28px;
 }
 
@@ -284,7 +300,7 @@
 
 .why h2 {
     color: #631fa9;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 47px;
     margin: 25px 0 0 4px;
     text-transform: uppercase;
@@ -417,7 +433,7 @@
 .why-list p {
     padding: 0 10px 0 0;
     color: #333;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 16px;
 }
 
@@ -468,7 +484,7 @@
 
 .why-num span {
     color: #631fa9;
-    font-family: 'robotoblack', sans-serif;
+    font-family: 'roboto_black', sans-serif;
     font-size: 48px;
 }
 
@@ -500,7 +516,7 @@
 .why .why-bottom p {
     margin: 12px 0 0 -11px;
     color: #fff;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 21px;
     line-height: 24px;
 }
@@ -510,14 +526,17 @@
 .three-plus {
     background: url("../img/bg-three-plus.png") 0 0 no-repeat;
     background-size: cover;
-    height: 1094px;
-    /*padding: 0;*/
+    height: 100%;
+}
+
+.three-plus .col-md-6 {
+    padding: 0;
 }
 
 .three-plus h2 {
     margin: 53px 0 0 -12px;
     color: #fff;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 47px;
     text-align: center;
     text-transform: uppercase;
@@ -539,16 +558,557 @@
 }
 
 .three-plus h4 {
-    /*margin: 53px 0 0 -12px;*/
+    margin: 51px 0 44px -2px;
     /*text-align: center;*/
     color: #fff;
-    font-family: "robotoblack_italic", sans-serif;
+    font-family: "roboto_black_italic", sans-serif;
     font-size: 24px;
     font-style: italic;
 }
 
 .three-plus p {
+    margin: 0 0 0 0;
+    line-height: 24px;
     color: #cf9eec;
-    font-family: 'robotothin', sans-serif;
+    font-family: 'roboto_thin', sans-serif;
     font-size: 16px;
 }
+
+.three-plus .plus-left {
+    position: relative;
+    top: 54px;
+    left: -7px;
+}
+
+.three-plus .plus-right {
+    position: relative;
+    top: 4px;
+    left: 13px;
+}
+
+.three-plus .plus-right li:nth-child(2) h4 {
+    margin: 66px 0 44px -4px;
+}
+
+.three-plus .plus-right li:last-child h4 {
+    margin: 53px 0 44px -4px;
+}
+
+.three-plus-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 76px 0 40px 0;
+}
+
+.three-plus-icons p {
+    position: relative;
+    width: 200px;
+    color: #fff;
+    font-family: "robotolight", sans-serif;
+    font-size: 21px;
+    text-align: center;
+}
+
+.three-plus-icons li p::before {
+    display: block;
+    margin: 0 auto;
+    content: "";
+}
+
+.three-plus-icons li:first-child p {
+    left: 13px;
+}
+
+.three-plus-icons li:first-child p::before {
+    width: 46px;
+    height: 55px;
+    margin: 0 0 19px 77px;
+    background: url("../img/three-plus-icons.png") 0 0 no-repeat;
+}
+
+.three-plus-icons li:nth-child(2) p {
+    left: -1px;
+}
+
+.three-plus-icons li:nth-child(2) p::before {
+    width: 63px;
+    height: 55px;
+    margin: -5px 0 24px 66px;
+    background: url("../img/three-plus-icons.png") -49px 0 no-repeat;
+}
+
+.three-plus-icons li:nth-child(3) p {
+    left: -6px;
+}
+
+.three-plus-icons li:nth-child(3) p::before {
+    width: 46px;
+    height: 55px;
+    margin: 6px 0 13px 76px;
+    background: url("../img/three-plus-icons.png") -113px 0 no-repeat;
+}
+
+.three-plus-icons li:nth-child(4) p {
+    left: -12px;
+}
+
+.three-plus-icons li:nth-child(4) p::before {
+    width: 28px;
+    height: 55px;
+    margin: 6px 0 13px 86px;
+    background: url("../img/three-plus-icons.png") -160px 0 no-repeat
+}
+
+.three-plus-icons li:last-child p {
+    left: -21px;
+}
+
+.three-plus-icons li:last-child p::before {
+    width: 62px;
+    height: 55px;
+    margin: 5px 0 14px 68px;
+    background: url("../img/three-plus-icons.png") -190px 0 no-repeat
+}
+
+.three-plus-bottom {
+    position: relative;
+    height: 170px;
+    width: 100%;
+    background-color: #563777;
+}
+
+.three-plus-bottom img {
+    margin: 0 0 0 -89px;
+}
+
+.three-plus-bottom h4 {
+    margin: 33px 0 0 -11px;
+    color: #fff;
+    font-family: "cormorantinfant-bolditalic", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.three-plus-bottom p {
+    margin: 6px 0 0 -12px;
+    color: #fff;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 36px;
+    line-height: 24px;
+}
+/*end section three-plus*/
+
+/*start section cost*/
+.cost {
+    position: relative;
+    background: #fff;
+    background: url("../img/bg-cost.png") 0 0 no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.cost h2 {
+    margin: 32px 0 0 4px;
+    color: #631fa9;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 47px;
+    text-transform: uppercase;
+}
+
+.cost .line {
+    display: inline-block;
+    width: 370px;
+    height: 1px;
+    background-color: #631fa9;
+    vertical-align: middle;
+    position: relative;
+    left: -26px;
+    top: -5px;
+}
+
+.cost .line:last-child {
+    left: 26px;
+}
+
+.cost .colcost {
+    position: relative;
+    width: 270px;
+    box-sizing: border-box;
+    border: 1px solid #631fa9;
+    margin: 42px 0 57px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.cost .col1 {
+    left: -22px;
+}
+
+.cost .col2 {
+    left: -14px;
+}
+
+.cost .col3 {
+    left: -6px;
+}
+
+.cost .col4 {
+    left: 1px;
+}
+
+.colcost img {
+    position: absolute;
+    left: -1px;
+    z-index: 0;
+}
+
+.colcost h5 {
+    position: relative;
+    margin: 243px 0 0 2px;
+    color: #fff;
+    font-size: 24px;
+    font-family: "roboto_regular", sans-serif;
+    text-transform: uppercase;
+}
+
+.colcost span {
+    position: relative;
+    display: block;
+    margin: 19px 0 25px 0;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'roboto_black', sans-serif;
+}
+
+.colcost button {
+    position: relative;
+    padding: 9px 29px 9px 29px;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 76px 2px;
+    border-radius: 3px;
+    border: none;
+    background-clip: padding-box;
+    background-color: #1bb100;
+    font-family: "roboto_regular", sans-serif;
+}
+
+.colcost p {
+    padding: 0 8px 0 8px;
+    line-height: 23px;
+    margin: -2px 0 37px 0;
+    letter-spacing: .7px;
+    color: #333;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 16px;
+}
+/*end section cost*/
+
+/*start section gallery*/
+.gallery {
+    background: url("../img/bg-gallery.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height: 420px;
+}
+
+.gallery .container {
+    padding: 0;
+}
+
+.gallery .line {
+    display: inline-block;
+    width: 400px;
+    height: 1px;
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+    left: -36px;
+    top: -5px;
+}
+
+.gallery .line:last-child {
+    left: 39px;
+}
+
+.gallery h2 {
+    margin: 44px 0 0 -13px;
+    color: #fff;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 47px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*start carousel*/
+.gallery .carousel {
+    margin: 18px 0 0 0;
+    padding: 0 47px 67px 40px;
+}
+
+.gallery .span12 {
+    overflow: hidden;
+}
+
+.gallery .carousel-inner {
+    overflow: inherit;
+}
+
+/* Reposition the controls slightly */
+/*.carousel-control {
+    left: -12px;
+}*/
+
+/*.carousel-control.right {
+    right: -12px;
+}*/
+
+/* Changes the position of the indicators */
+.gallery .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0;
+    margin-right: -19px;
+}
+
+.gallery .carousel-indicators li:first-child {
+    margin: 0 9px 0 -16px;
+}
+
+.gallery .carousel-indicators li:last-child {
+    margin: 0 -5px 0 9px;
+}
+
+.gallery .thumbnail {
+    width: 270px;
+    border: none;
+    padding: 0;
+}
+
+.gallery .span3.img1 .thumbnail {
+    margin: 0 79px 0 -49px;
+}
+
+.gallery .span3.img2 .thumbnail {
+    margin: 0 30px 0 -49px;
+}
+
+.gallery .span3.img3 .thumbnail {
+    margin: 0 30px 0 0;
+}
+
+.gallery .span3.img4 .thumbnail {
+    margin: 0;
+}
+
+.gallery .row-fluid {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery .well {
+    background: transparent;
+    border: none;
+}
+
+.gallery .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    /*background-clip: padding-box;*/
+    background: transparent;
+}
+
+.gallery .carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    /*background-clip: padding-box;*/
+    background-color: #1bb100;
+    border: none;
+}
+/*end carousel*/
+/*end section gallery*/
+
+/*start section comments*/
+
+.comments {
+    background-color: #eaeaea;
+}
+
+.comments h2 {
+    margin: 33px 0 0 -10px;
+    color: #631fa9;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 47px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments .line {
+    display: inline-block;
+    width: 470px;
+    height: 1px;
+    background-color: #631fa9;
+    vertical-align: middle;
+    position: relative;
+    left: -20px;
+    top: -5px;
+}
+
+.comments .line:last-child {
+    left: 20px;
+}
+
+.comments .comment-img {
+    margin: -24px 0 0 -18px;
+}
+
+.comments .col-md-7 {
+    padding: 0;
+}
+
+/* start carousel2 */
+/* Fade Slider CSS */
+.comments .carousel .item {
+    /*-webkit-transition: 0.7s ease-in-out opacity;*/
+    /*-moz-transition: 0.7s ease-in-out opacity;*/
+    /*-o-transition: 0.7s ease-in-out opacity;*/
+    /*transition: 0.7s ease-in-out opacity;*/
+    /*left: 0 !important;*/
+    /*width: 630px;*/
+    margin: 0 0 0 7px;
+}
+
+.comments .carousel .item img {
+    height: 221px;
+}
+
+.comments .carousel .next.left,
+.comments .carousel .prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.comments .carousel .active.left,
+.comments .carousel .active.right {
+    opacity: 0;
+    z-index: 2;
+}
+.comments .carousel .carousel-control {
+    z-index: 1000;
+    outline:none;
+    opacity: 1;
+}
+
+.comments .carousel .carousel-control:focus,
+.comments .carousel .carousel-control:hover {
+    opacity: .7;
+}
+
+.comments .carousel-inner {
+    width: 630px;
+    height: 221px;
+    margin: 88px 0 0 0;
+}
+
+.comments .carousel-caption {
+    display: inline-block;
+    width: 240px;
+    margin: -10px 0 0 0;
+    top: -22px;
+    right: 118px;
+    left: auto;
+    text-align: left;
+}
+
+.comments .carousel-caption h6 {
+    margin: 10px 0 11px -1px;
+    color: #6d15b3;
+    font-family: "robotolight", sans-serif;
+    font-size: 24px;
+    text-shadow: none;
+}
+
+.comments .carousel-caption p {
+    color: #333;
+    font-family: "roboto_italic", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: none;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.comments .carousel-control.left,
+.comments .carousel-control.right {
+    width: 48px;
+    height: 48px;
+    background-image: none;
+}
+
+.comments .carousel-control.right {
+    top: 53px;
+    right: 6px;
+}
+
+.comments .carousel-control.left {
+    left: auto;
+    top: 119px;
+    right: 6px;
+}
+
+.comments .glyphicon-menu-right,
+.comments .glyphicon-menu-left {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    background-color: #631fa9;
+}
+
+.comments .glyphicon-menu-right {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+}
+/* end carousel2 */
+
+.comments .comments-bottom {
+    background-color: #333;
+    text-align: center;
+}
+
+.comments .comments-bottom h2 {
+    margin: 22px 0 9px -11px;
+    color: #fff;
+    font-family: "cormorantinfant-bolditalic", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: none;
+}
+
+.comments .comments-bottom ul {
+    margin: 0 0 22px 0;
+}
+
+.comments .comments-bottom ul p {
+    margin: 0 0 0 -14px;
+    color: #fff;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 18px;
+}
+
+.comments .comments-bottom ul p:first-child {
+    margin: 0 0 11px -13px;
+    color: #fff;
+    font-family: 'roboto_thin', sans-serif;
+    font-size: 24px;
+}
+
+/*end section comments*/
