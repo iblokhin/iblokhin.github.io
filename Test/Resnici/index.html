@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
@@ -18,55 +18,6 @@
     <!--<link rel="stylesheet" href="css/fa-viber.css">-->
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<script async defer-->
-            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYV3fyk02RVj6Ee9u-r4DsuI8qjaKZGc&signed_in=true">-->
-
-    <!--</script>-->
-
-    <script>
-
-        /*function initMap() {
-            var latlng = new google.maps.LatLng(50.399143, 30.375597);
-            var settings = {
-                zoom: 17,
-                center: latlng,
-                mapTypeControl: true,
-                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-                navigationControl: true,
-                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-
-            var map = new google.maps.Map(document.getElementById('block-map'), settings);
-
-            var contentString = '<div id="content">'+
-                    '<div id="siteNotice">'+
-                    '</div>'+
-                    '<h1 id="firstHeading" class="firstHeading">Høgenhaug</h1>'+
-                    '<div id="bodyContent">'+
-                    '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>'+
-                    '</div>'+
-                    '</div>';
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-
-            var companyPos = new google.maps.LatLng(50.399143, 30.375597);
-            var companyMarker = new google.maps.Marker({
-                position: companyPos,
-                map: map,
-                title: 'Hello World',
-                zIndex: 3
-            });
-
-            google.maps.event.addListener(companyMarker, 'click', function() {
-                infowindow.open(map,companyMarker);
-            });
-
-        }*/
-
-    </script>
-
 </head>
 <body>
     <div class="wrapper">
@@ -75,9 +26,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="img/women-head.png" alt="">
+                            <img class="women-head-desk" src="img/women-head.png" alt="...">
+                            <img class="women-head-mobile" src="img/women-head-mobile.png" alt="...">
                         </div>
                         <div class="col-md-7 header-top-right">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
                             <ul class="menu">
                                 <li><a href="#">Преимущества</a></li>
                                 <li><a href="#">Цены</a></li>
@@ -456,7 +409,7 @@
                         <h5>Записаться на приём</h5>
                         <span>и получить в подарок</span>
                         <p>щёточку для ухода за нарощеными ресничками</p>
-                        <form action="">
+                        <form action="#">
                             <input type="text" placeholder="Ваше имя">
                             <input type="tel" placeholder="Номер телефона">
                             <input type="text" placeholder="Удобное время (утро / день / вечер)">

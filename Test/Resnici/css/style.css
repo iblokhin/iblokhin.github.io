@@ -104,9 +104,17 @@
     padding: 0;
 }
 
-.header-top img {
+.header-top .women-head-desk {
     margin: 0 0 0 -138px;
     z-index: 0;
+}
+
+.women-head-mobile {
+    display: none;
+}
+
+.header-top .fa-bars {
+    display: none;
 }
 
 .header-top-right .menu {
@@ -1467,3 +1475,131 @@
     line-height: 16px;
 }
 /*end section footer*/
+
+@media (min-width: 300px) and (max-width: 480px) {
+    /*.wrapper {*/
+        /*width: 300px;*/
+    /*}*/
+
+    .container {
+        width: 260px;
+    }
+
+    .header-top {
+        height: 100%;
+    }
+
+    .header-top .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-top .row .col-md-5 {
+        order: 2;
+        /*height: 100%;*/
+    }
+
+    .header-top .row .col-md-7 {
+        order: 1;
+    }
+
+    .header-top .women-head-desk {
+        display: none;
+    }
+
+    .header-top .women-head-mobile {
+        display: block;
+        position: relative;
+        bottom: 301px;
+        left: -21px;
+        margin: 0;
+    }
+
+    .header-top-right .menu {
+        display: none;
+    }
+
+    .header-top .fa-bars {
+        display: block;
+        margin: 13px 0 0 0;
+        font-size: 25px;
+        color: #fff;
+        order: 1;
+    }
+
+    .header-top-right h1 {
+        margin: 4px 15px 20px 15px;
+        line-height: 47px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .header-top-right p {
+        margin: 31px 45px 72px 44px;
+        line-height: 19px;
+        font-size: 16px;
+    }
+
+    .header-top-right .reserve {
+        width: 260px;
+        left: 0;
+        height: 220px;
+        top: 193px;
+    }
+
+    .header-top-right .reserve > p {
+        margin: 0 0 9px 0;
+        padding: 9px 0 0 0;
+        font-size: 16px;
+    }
+
+    .header-top-right .reserve .reserve-contacts {
+        margin: 0 5px 0 5px;
+    }
+
+    .header-top-right .reserve .reserve-contacts li:first-child {
+        padding: 11px 0 3px 0;
+    }
+
+    .header-top-right .reserve .reserve-contacts .reserve-tel {
+        margin: 0 0 0 -15px;
+        font-size: 16px;
+    }
+
+    .header-top-right .reserve .reserve-contacts .fa-phone {
+        font-size: 12px;
+        margin: 0 7px 0 1px;
+    }
+
+    .header-top-right .reserve .reserve-contacts .fa-whatsapp {
+        font-size: 23px;
+        padding: 2px 4px 2px 4px;
+    }
+
+    .header-top-right .reserve .reserve-contacts .fa-viber {
+        width: 28px;
+        height: 27px;
+        background: url('../img/viber-icon.png') -5px -5px no-repeat;
+    }
+
+    .header-top-right .reserve .reserve-contacts .fa-viber:before {
+        font-size: 11px;
+        top: 7px;
+        left: -1px;
+    }
+
+    .header-top-right .reserve .reserve-contacts p {
+        width: 200px;
+        margin: 9px 0 0 26px;
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    .header-top-right .reserve .reserve-contacts button {
+        margin: 7px 0 14px 0;
+        padding: 7px 17px 8px 16px;
+        font-size: 16px;
+    }
+
+
+}
