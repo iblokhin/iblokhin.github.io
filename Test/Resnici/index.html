@@ -18,6 +18,55 @@
     <!--<link rel="stylesheet" href="css/fa-viber.css">-->
     <link rel="stylesheet" href="css/style.css">
 
+    <!--<script async defer-->
+            <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYV3fyk02RVj6Ee9u-r4DsuI8qjaKZGc&signed_in=true">-->
+
+    <!--</script>-->
+
+    <script>
+
+        /*function initMap() {
+            var latlng = new google.maps.LatLng(50.399143, 30.375597);
+            var settings = {
+                zoom: 17,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                navigationControl: true,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById('block-map'), settings);
+
+            var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">Høgenhaug</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>'+
+                    '</div>'+
+                    '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var companyPos = new google.maps.LatLng(50.399143, 30.375597);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: 'Hello World',
+                zIndex: 3
+            });
+
+            google.maps.event.addListener(companyMarker, 'click', function() {
+                infowindow.open(map,companyMarker);
+            });
+
+        }*/
+
+    </script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -397,9 +446,106 @@
                 </div>
             </div>
         </section>
+        <section class="reception">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="reception-left" src="img/form-img.png" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Записаться на приём</h5>
+                        <span>и получить в подарок</span>
+                        <p>щёточку для ухода за нарощеными ресничками</p>
+                        <form action="">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" placeholder="Номер телефона">
+                            <input type="text" placeholder="Удобное время (утро / день / вечер)">
+                            <input type="submit" value="Записаться">
+                            <span>Ваши данные не будут переданы третьим лицам</span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 reception-right">
+                        <img src="img/brush-img.png" alt="...">
+                        <p>Запись производится без предоплаты.
+                           В день процедуры обязательно перезваниваем для подтверждения.
+                           Если Вы не отвечаете на смс и звонки - запись аннулируется.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="answers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span class="line"></span>Вопрос-Ответ<span class="line"></span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tabs">
+
+                        <ul class="tabs__caption">
+                            <li class="active">Сколько можно носить реснички?</li>
+                            <li>Как ухаживать за нарощенными ресницами?</li>
+                            <li>Больно ли наращивать ресницы? <br> Есть ли болезненные ощущения?</li>
+                            <li>Как происходит процедура наращивания ресниц?</li>
+                            <li>Из чего изготавливаются ресницы?</li>
+                        </ul>
+
+                        <div class="tabs__content active">
+                            Носить реснички и получать удовольствие от нового образа Вы сможете в среднем три, четыре недели - именно за такой период сменяются ваши собственные ресницы. Выпадают наращенные ресницы естественно и незаметно: выпала Ваша "родная" ресничка и вместе с ней наращенная. Наши постоянные клиентки записываются на процедуру раз в месяц. Наращивать ресницы можно сразу после снятия. Вреда для Ваших родных не будет. Можно вообще не делать перерывов.
+                        </div>
+                        <div class="tabs__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias repellendus rerum sapiente tenetur veritatis?
+                        </div>
+                        <div class="tabs__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores assumenda atque cumque cupiditate exercitationem explicabo id, maxime, modi nulla provident, quam rerum vitae.
+                        </div>
+                        <div class="tabs__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores fuga repellat ut!
+                        </div>
+                        <div class="tabs__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur dolores eos fugiat, id illo maxime minima officiis, placeat quae repudiandae, veritatis vitae voluptatem voluptatum.
+                        </div>
+
+                    </div><!-- .tabs-->
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2543.2575343911676!2d30.373431016130276!3d50.39903787946827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1484667329681" width="1600" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+            <div id="block-map" style="height: 420px; width: 100%"></div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <ul class="footer-top">
+                        <li>
+                            <h6>Политика конфиденциальности</h6>
+                        </li>
+                        <li>
+                            <h6>2013-2016 <br> Профессиональное наращивание ресниц</h6>
+                        </li>
+                        <li>
+                            <img src="img/logo-smart.png" alt="...">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="footer-bottom">
+                        <li><p>Наращивание ресниц - это безопасная процедура, когда к одной Вашей родной ресничке приклеиваются искусственные реснички. Существуют различные характеристики искусственных ресниц: длины, толщина, изгиб. Материалы подбираются индивидуально, чтобы Ваши глазки выглядели естественными и натуральными, ну и, конечно же, неотразимыми.</p></li>
+                        <li><p>Натуральная красота без лишних усилий и даже макияжа. Вы получите длинные и естественные ресницы, о которых давно мечтали и никакие комочки туши не испортят этот образ. Даже забудете про любимую тушь, ведь теперь не нужно будет красить ею глаза. Кроме того, такие ресницы отлично смотрятся на профессиональных фотографиях.</p></li>
+                        <li><p>Это прекрасная альтернатива ежедневному окрашиванию ресниц тушью, которая для некоторых девушек становится настоящим спасением в решении проблемы недостаточно длинных и густых ресниц. Теперь Вам не нужно тратить время на смывание макияжа перед сном и позволить себе понежиться в кровати лишние полчаса утром, чего так не хватает, наверное, каждой девушке.</p></li>
+                        <li><p>Вы забудете про ограничения посещение бассейна, пляжа, сауны, бани, теперь можно даже проронить слезу, просматривая мелодраму в кинотеатре, нарощенные ресницы являются более устойчивыми к влаге и ультрафиолетовому излучению, поэтому при их применении все это дозволено; возможность визуальной корректировки формы и размера глаз с помощью нарощенных ресниц; индивидуальный подбор цвета, длины, загиба, густоты ресниц с учетом пожелания клиента благодаря широкому ассортименту ресниц для наращивания; возможность дополнительного украшения ресниц (например, стразами) для торжественного случая или гламурной вечеринки.</p></li>
+                        <li><p>Наращивание ресниц – это уникальный метод для удлинения (увеличения количества) собственных ресничек. Теперь Вы сможете оставаться красивой в любой ситуации... И что самое главное - мужчины больше не смогут оторвать своих глаз от Вашего чарующего взгляда!</p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
-
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQYV3fyk02RVj6Ee9u-r4DsuI8qjaKZGc&signed_in=true">
+    </script>
 </body>
 </html>
