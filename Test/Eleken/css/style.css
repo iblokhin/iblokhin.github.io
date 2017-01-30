@@ -1,0 +1,641 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+    url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+    url('../fonts/playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-top {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+.top-left li,
+.top-right li {
+    display: inline-block;
+    height: 43px;
+    line-height: 42px;
+}
+
+.header-top a {
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.top-right .valuta,
+.top-right .lang {
+    position: relative;
+}
+
+.top-right .valuta a {
+    padding: 17px 7px 15px 10px;
+}
+
+.jq-selectbox__select {
+    text-shadow: none;
+    box-shadow: none;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.jq-selectbox__trigger {
+    display: none;
+}
+
+.top-right .valuta .fa-chevron-down {
+    padding: 0 15px 0 0;
+}
+
+.top-right .lang {
+    padding: 0 2px 0 0;
+}
+
+.top-right .lang a {
+    padding: 17px 2px 16px 20px;
+}
+
+.fa {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 10px;
+}
+
+.top-right .lang:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 43px;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.top-left li,
+.top-right li {
+    letter-spacing: 1px;
+}
+
+.top-left li a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.top-left li:first-child a {
+    margin: 0 15px 0 5px;
+    padding: 6px 0 6px 0;
+}
+
+.top-left li:nth-child(2) a {
+    margin: 0 15px 0 16px;
+    padding: 6px 0 6px 0;
+}
+
+.top-left li:last-child a {
+    margin: 0 15px 0 11px;
+    padding: 6px 0 6px 0;
+}
+
+.top-left a:hover {
+    padding-bottom: 6px;
+    color: #000;
+    border-bottom: 2px solid #1173d3;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.header-bott {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+.logo img {
+    margin: -3px 0 0 4px;
+}
+
+.header-bott a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0 0 75px;
+}
+
+.menu li {
+    padding: 0 27px;
+}
+
+.menu a {
+    padding: 6px 0;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a.red {
+    color: #ff0000;
+}
+
+.menu a:hover,
+.basket a:hover {
+    color: #000;
+    border-bottom: 2px solid #1173d3;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.menu a.red:hover {
+    color: #ff0000;
+}
+
+.header-bott-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket {
+    display: inline-flex;
+    margin: 0 13px 0 0;
+}
+
+.basket li:first-child {
+    margin: -2px 0 0 0;
+}
+
+.basket li:last-child {
+    margin: -4px 9px 0 13px;
+}
+
+.basket a {
+    padding: 6px 0;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    border-bottom: 2px solid transparent;
+}
+
+.basket span {
+    padding: 15px 18px;
+    color: #333;
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #1f85d9;
+    border-radius: 24px;
+}
+
+.search {
+    position: relative;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.search input {
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-transition: width .5s ease;
+    -moz-transition: width .5s ease;
+    -ms-transition: width .5s ease;
+    -o-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+.header-bott-right .fa-search {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    margin: -3px 4px 0 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*end header*/
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.menu-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 58px 0 0 10px;
+}
+
+.main h1 {
+    margin: 93px 0 0 4px;
+    color: #333;
+    font-family: "PlayfairDisplay-Regular", sans-serif;
+    font-size: 58px;
+    line-height: 58px;
+}
+
+.menu-main li {
+    padding: 0 27px;
+}
+
+.menu-main a {
+    padding: 6px 0;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-main a:hover {
+    color: #000;
+    border-bottom: 2px solid #1173d3;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.menu-main a.active {
+    color: #000;
+    border-bottom: 2px solid #1173d3;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.block-goods {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 47px 0 0 0;
+}
+
+.block-goods li {
+    margin: 0 5px;
+    padding-bottom: 35px;
+}
+
+.block {
+    position: relative;
+}
+
+.block .new {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    padding: 7px 11px;
+    color: #fff;
+    background: #1173d3;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-family: "Lato-Bold", sans-serif;
+}
+
+.block p {
+    margin: 23px 0 10px 0;
+    color: #333;
+    font-family: "PlayfairDisplay-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.block span {
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.block .line-through {
+    text-decoration: line-through;
+}
+
+.block .red {
+    color: #ff0000;
+}
+
+.load-more {
+    margin: 22px 0 50px 0;
+    padding: 0 0 6px 0;
+    letter-spacing: 1px;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+.load-more:hover {
+    color: #000;
+    border-bottom: 2px solid #1173d3;
+    transition: .4s;
+    text-decoration: none;
+}
+/*end main*/
+
+.subscribe {
+    /*position: relative;*/
+    background: url("../img/bg-subscribe.png") 0 0 repeat;
+    z-index: 1;
+}
+
+.subscribe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe h5 {
+    margin: 68px 0 0 1px;
+    letter-spacing: 1px;
+    color: rgba(51, 51, 51, 0.6);
+    font-family: "Lato-Bold",sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.subscribe h2 {
+    margin-top: 21px;
+    color: #fff;
+    font-family: "PlayfairDisplay-Regular", sans-serif;
+    font-size: 38px;
+}
+
+.subscribe button {
+    position: relative;
+    margin: 29px 0 70px 0;
+    padding: 16px 126px 16px 27px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.subscribe button .fa-chevron-right{
+    position: absolute;
+    top: 17px;
+    right: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.subscribe button:hover {
+    color: #333;
+    border: 2px solid #333;
+    transition: .4s;
+}
+
+.subscribe button:hover .fa-chevron-right {
+    color: #333;
+    transition: .4s;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    width: 400px ;
+    height: 260px;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.form .corner-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #1173d3;
+    border-left: 2px solid #1173d3;
+}
+
+.form .corner-bott {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #1173d3;
+    border-bottom: 2px solid #1173d3;
+}
+
+.form label {
+    text-align: left;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form label:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.form label:nth-child(4) {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form input[type="text"] {
+    display: block;
+    height: 30px;
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid rgba(51, 51, 51, 0.6);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.form input[type="submit"] {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 45px;
+    color: #fff;
+    background: #1173d3;
+    border: none;
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background: rgba(51, 51, 51, 0.91);
+    transition: .4s;
+}
+
+.form input[type="text"]::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form input[type="text"]::-moz-placeholder {
+    padding-left: 10px;
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}/* Firefox 19+ */
+
+.form input[type="text"]:-moz-placeholder {
+    padding-left: 10px;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}/* Firefox 18- */
+
+.form input[type="text"]:-ms-input-placeholder {
+    padding-left: 10px;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form .fa-times {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form .fa-times:hover {
+    color: #1173d3;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.jq-checkbox {
+    width: 14px;
+    height: 14px;
+}
+
+.form .jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 8px;
+    margin: 3px 0 0 9px;
+    background: #1173d3;
+    box-shadow: inset 0 -3px 6px rgba(17, 93, 185, 1);
+}
+/*end subscribe*/
+
+.footer {
+    position: relative;
+    padding-bottom: 28px;
+    z-index: 1;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .logo img {
+    margin: 32px 0 0 5px;
+}
+
+.footer .menu {
+    margin: 25px 0 0 122px;
+}
+
+.footer .menu li {
+    padding: 0 25px;
+}
+
+.footer p {
+    margin: 28px 4px 0 0;
+    letter-spacing: 1.2px;
+    color: rgba(51, 51, 51, 0.5);
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*end footer*/
