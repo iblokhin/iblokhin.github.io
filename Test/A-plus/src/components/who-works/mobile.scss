@@ -1,0 +1,162 @@
+& {
+    background: url('../images/bg-who-works.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+
+        h2 {
+            margin: 66px 5px 0 13px;
+            line-height: 35px;
+            text-align: left;
+            letter-spacing: 2px;
+            color: #fff;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 30px;
+        }
+
+        .works-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 20px;
+
+            .works-item {
+                position: relative;
+                margin-left: 73px;
+                font-size: 16px;
+                letter-spacing: .7px;
+                line-height: 72px;
+                color: #fff;
+                font-family: Open_SansRegular, sans-serif;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 34px;
+                    height: 50px;
+                    top: 15px;
+                    left: -100px;
+                }
+            }
+
+            .works-item1 {
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: 19px;
+                    left: -47px;
+                    background: url('../images/icons.png') 2px -44px no-repeat ;
+                }
+            }
+
+            .works-item2 {
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: 12px;
+                    left: -51px;
+                    background: url('../images/icons.png') -30px -44px no-repeat ;
+                }
+            }
+
+            .works-item3 {
+
+                &:before {
+                    width: 32px;
+                    height: 50px;
+                    top: 19px;
+                    left: -47px;
+                    background: url('../images/icons.png') -62px -44px no-repeat ;
+                }
+            }
+
+            .works-item4 {
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: 19px;
+                    left: -47px;
+                    background: url('../images/icons.png') -92px -44px no-repeat ;
+                }
+            }
+
+            .works-item5 {
+
+                &:before {
+                    width: 39px;
+                    height: 50px;
+                    top: 22px;
+                    left: -47px;
+                    background: url('../images/icons.png') -125px -44px no-repeat ;
+                }
+            }
+
+            .works-item6 {
+
+                &:before {
+                    width: 31px;
+                    height: 50px;
+                    top: 19px;
+                    left: -47px;
+                    background: url('../images/icons.png') -163px -44px no-repeat ;
+                }
+            }
+
+            .works-item7 {
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: 21px;
+                    left: -47px;
+                    background: url('../images/icons.png') -193px -44px no-repeat ;
+                }
+            }
+        }
+
+        > p {
+            margin: 9px 25px 0 15px;
+            font-size: 16px;
+            letter-spacing: .9px;
+            line-height: 24px;
+            color: #fff;
+            text-align: left;
+            font-family: Open_SansRegular, sans-serif;
+        }
+
+        > a {
+            width: 290px;
+            margin: 36px auto 40px;
+            padding: 10px 0 11px 0;
+            text-align: center;
+            color: #fff;
+            font-family: Open_SansRegular, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            border-radius: 27px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #159f85;
+            text-decoration: none;
+
+            &:hover {
+                transition: .3s;
+                box-shadow: none;
+                color: #159f85;
+                border: 2px solid #159f85;
+                box-sizing: border-box;
+                background: transparent;
+            }
+        }
+    }
+}

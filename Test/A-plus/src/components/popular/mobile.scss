@@ -1,0 +1,117 @@
+& {
+    background: url('../images/bg-popula-mob.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            margin: 36px 45px 0 15px;
+            line-height: 36px;
+            text-align: left;
+            letter-spacing: 2px;
+            color: #fff;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 30px;
+        }
+
+        .pop-list {
+            margin: 34px 0 0 5px;
+
+            .pop-item {
+                position: relative;
+                margin: 0 20px 0 67px;
+                font-size: 16px;
+                letter-spacing: .7px;
+                line-height: 20px;
+                color: #fff;
+                text-align: left;
+                font-family: Open_SansRegular, sans-serif;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 42px;
+                    height: 33px;
+                    top: 4px;
+                    left: -60px;
+                }
+            }
+
+            .pop-item1 {
+
+                &:before {
+                    background: url('../images/icons.png') 2px -96px no-repeat ;
+                }
+            }
+
+            .pop-item2 {
+                margin-top: 16px;
+
+                &:before {
+                    background: url('../images/icons.png') -39px -95px no-repeat ;
+                }
+            }
+
+            .pop-item3 {
+                margin: 16px 69px 0 67px;
+
+                &:before {
+                    background: url('../images/icons.png') -80px -95px no-repeat ;
+                }
+            }
+
+            .pop-item4 {
+                margin-top: 16px;
+
+                &:before {
+                    background: url('../images/icons.png') -122px -95px no-repeat ;
+                }
+            }
+
+            .pop-item5 {
+                margin-top: 17px;
+
+                &:before {
+                    background: url('../images/icons.png') -163px -95px no-repeat ;
+                }
+            }
+
+            .pop-item6 {
+                margin-top: 16px;
+
+                &:before {
+                    background: url('../images/icons.png') -207px -95px no-repeat ;
+                }
+            }
+        }
+
+        > a {
+            width: 288px;
+            margin: 39px 0 40px 0;
+            padding: 16px 0 17px 0;
+            color: #fff;
+            font-family: Open_SansRegular, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            border-radius: 27px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #159f85;
+            text-decoration: none;
+
+            &:hover {
+                transition: .3s;
+                box-shadow: none;
+                border: 2px solid #fff;
+                box-sizing: border-box;
+                background: transparent;
+            }
+        }
+    }
+}

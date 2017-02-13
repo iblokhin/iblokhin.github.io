@@ -1,0 +1,13 @@
+@import '../desktop';
+
+.container {
+    width: 1000px;
+
+    .ben-list {
+        justify-content: space-around;
+
+        .ben-item {
+            width: 230px;
+        }
+    }
+}

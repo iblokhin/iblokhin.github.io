@@ -1,0 +1,31 @@
+@import '../mobile';
+
+.container {
+
+    h2 {
+        text-align: center;
+    }
+
+    .owl-carousel {
+
+        .owl-stage-outer {
+            height: 460px;
+
+            .owl-item {
+
+                .item {
+
+                    p {
+                        padding: 10px 60px 0 30px;
+                        line-height: 23px;
+                        text-align: center;
+                    }
+
+                    img {
+                        height: 260px;
+                    }
+                }
+            }
+        }
+    }
+}

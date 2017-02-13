@@ -1,0 +1,9 @@
+@import '../desktop';
+
+& {
+    background: url('../images/bg-feature-desc.png') 405px 18px no-repeat;
+
+    .container {
+        width: 960px;
+    }
+}

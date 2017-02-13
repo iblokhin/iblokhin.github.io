@@ -1,0 +1,167 @@
+& {
+    background: url('../images/bg-who-works.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 1170px;
+        margin: 0 auto;
+
+        h2 {
+            margin: 95px 0 0 -4px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #fff;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 36px;
+        }
+
+        .works-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 130px;
+
+            .works-item {
+                position: relative;
+                margin-top: 64px;
+                font-size: 12px;
+                letter-spacing: .7px;
+                line-height: 24px;
+                color: #fff;
+                text-align: center;
+                font-family: Open_SansRegular, sans-serif;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 34px;
+                    height: 50px;
+                    top: 15px;
+                    left: -100px;
+                }
+            }
+
+            .works-item1 {
+                left: 2px;
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: -54px;
+                    left: 21px;
+                    background: url('../images/icons.png') 2px -44px no-repeat ;
+                }
+            }
+
+            .works-item2 {
+                left: -4px;
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: -58px;
+                    left: 44px;
+                    background: url('../images/icons.png') -30px -44px no-repeat ;
+                }
+            }
+
+            .works-item3 {
+                left: -27px;
+
+                &:before {
+                    width: 32px;
+                    height: 50px;
+                    top: -50px;
+                    left: 39px;
+                    background: url('../images/icons.png') -62px -44px no-repeat ;
+                }
+            }
+
+            .works-item4 {
+                left: -27px;
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: -51px;
+                    left: 21px;
+                    background: url('../images/icons.png') -92px -44px no-repeat ;
+                }
+            }
+
+            .works-item5 {
+                left: -9px;
+
+                &:before {
+                    width: 39px;
+                    height: 50px;
+                    top: -51px;
+                    left: 18px;
+                    background: url('../images/icons.png') -125px -44px no-repeat ;
+                }
+            }
+
+            .works-item6 {
+                left: -7px;
+
+                &:before {
+                    width: 31px;
+                    height: 50px;
+                    top: -51px;
+                    left: 41px;
+                    background: url('../images/icons.png') -163px -44px no-repeat ;
+                }
+            }
+
+            .works-item7 {
+
+                &:before {
+                    width: 34px;
+                    height: 50px;
+                    top: -49px;
+                    left: 13px;
+                    background: url('../images/icons.png') -193px -44px no-repeat ;
+                }
+            }
+        }
+
+        > p {
+            margin: 59px 143px 0 146px;
+            font-size: 12px;
+            letter-spacing: .7px;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            font-family: Open_SansRegular, sans-serif;
+        }
+
+        > a {
+            width: 370px;
+            margin: 16px auto 98px;
+            padding: 16px 0 17px 0;
+            color: #fff;
+            font-family: Open_SansRegular, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            border-radius: 27px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #159f85;
+            text-decoration: none;
+
+            &:hover {
+                transition: .3s;
+                box-shadow: none;
+                color: #159f85;
+                border: 2px solid #159f85;
+                box-sizing: border-box;
+                background: transparent;
+            }
+        }
+    }
+}

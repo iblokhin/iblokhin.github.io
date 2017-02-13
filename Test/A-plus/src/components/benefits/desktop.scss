@@ -1,0 +1,142 @@
+& {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 1170px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+
+        h2 {
+            margin: 94px 0 0 0;
+            font-weight: 900;
+            text-align: center;
+            line-height: 36px;
+            letter-spacing: 2.4px;
+            color: #14100e;
+            font-family: GothamProBlack, sans-serif;
+            font-size: 36px;
+        }
+
+        .ben-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 55px;
+
+            .ben-item {
+                width: 270px;
+
+                h5 {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 24px;
+                    letter-spacing: .9px;
+                    color: #14100e;
+                    font-family: GothamProBlack, sans-serif;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+
+                p {
+                    line-height: 18px;
+                    letter-spacing: .7px;
+                    color: #14100e;
+                    font-family: "Open_SansRegular", sans-serif;
+                    font-size: 12px;
+                }
+            }
+
+            .ben-item1 {
+
+                h5 {
+                    margin-top: 73px;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        top: -67px;
+                        left: 0;
+                        width: 34px;
+                        height: 44px;
+                        background: url('../images/icons.png') 0 0 no-repeat;
+                    }
+                }
+
+                p {
+                    margin: 6px -2px 0 0;
+                }
+            }
+
+            .ben-item2 {
+
+                h5 {
+                    margin: 73px 0 0 2px;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        top: -66px;
+                        left: 0;
+                        width: 34px;
+                        height: 44px;
+                        background: url('../images/icons.png') -35px 0 no-repeat;
+                    }
+                }
+
+                p {
+                    margin: 6px 0 0 2px;
+                    line-height: 18px;
+                }
+            }
+
+            .ben-item3 {
+
+                h5 {
+                    margin: 73px 0 0 2px;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        top: -59px;
+                        left: 0;
+                        width: 34px;
+                        height: 44px;
+                        background: url('../images/icons.png') -71px 0 no-repeat;
+                    }
+                }
+
+                p {
+                    margin: 5px 0 0 2px;
+                    line-height: 19px;
+                }
+            }
+
+            .ben-item4 {
+
+                h5 {
+                    margin: 73px 0 0 1px;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        display: inline-block;
+                        top: -59px;
+                        left: 0;
+                        width: 34px;
+                        height: 44px;
+                        background: url('../images/icons.png') -105px 0 no-repeat;
+                    }
+                }
+
+                p {
+                    margin: 6px 0 0 1px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

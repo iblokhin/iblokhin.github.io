@@ -1,0 +1,33 @@
+@import '../desktop';
+
+.container {
+    width: 960px;
+
+    .header-top {
+
+        .menu {
+
+            li {
+                &:nth-child(2) {
+                    padding: 10px 45px 10px 0;
+                }
+
+                &:nth-child(3) {
+                    padding: 10px 38px 10px 45px;
+                }
+
+                &:nth-child(4) {
+                    padding: 10px 26px 10px 38px;
+                }
+
+                &:nth-child(5) {
+                    padding: 10px 40px 10px 26px;
+                }
+
+                &:last-child {
+                    padding: 10px 40px 10px 40px;
+                }
+            }
+        }
+    }
+}

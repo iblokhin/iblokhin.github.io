@@ -1,0 +1,319 @@
+& {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 1170px;
+        margin: 0 auto 28px;
+
+        h2 {
+            margin: 113px 0 0 3px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #14100e;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 36px;
+        }
+
+        .owl-carousel {
+            margin: 28px 0 0 0;
+
+            .owl-stage-outer {
+                height: 425px;
+                padding-top: 83px;
+
+                .owl-item {
+
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+
+                        .item-box {
+                            position: relative;
+                            width: 630px;
+                            height: 270px;
+                            background: #fff;
+                            border-radius: 10px;
+                            box-shadow: 0 2px 80px 5px rgba(0, 0, 0, .2);
+
+                            .fa-vk {
+                                position: absolute;
+                                top: -32px;
+                                left: 39px;
+                                font-size: 64px;
+                                color: #375577;
+                            }
+
+                            .fa-instagram {
+                                position: absolute;
+                                top: -15px;
+                                left: 45px;
+                                font-size: 64px;
+                                background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+
+                            .fa-facebook-official {
+                                position: absolute;
+                                top: -30px;
+                                left: 45px;
+                                font-size: 64px;
+                                color: #3d5a98;
+                            }
+
+                            > span {
+                                display: block;
+                                margin: 48px 0 0 62px;
+                                color: rgba(20, 16, 14, 0.3);
+                                font-family: "GothamProBlack", sans-serif;
+                                font-size: 14px;
+                                font-weight: 900;
+                            }
+
+                            .box-list {
+                                margin-top: 5px;
+                                margin-left: 61px;
+
+                                p {
+                                    display: inline-block;
+                                    width: 135px;
+                                    color: #14100e;
+                                    font-family: Open_SansRegular, sans-serif;
+                                    font-size: 12px;
+                                    letter-spacing: .7px;
+                                    line-height: 24px;
+                                    font-weight: bold;
+                                    text-align: left;
+                                }
+
+                                span {
+                                    display: inline-block;
+                                    width: 130px;
+                                    letter-spacing: .7px;
+                                    line-height: 24px;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    color: #14100e;
+                                    font-family: "GothamProBlack", sans-serif;
+                                    font-size: 14px;
+
+                                }
+                            }
+
+                            button {
+                                margin: 25px 0 0 49px;
+                                padding: 12px 39px 14px 43px;
+                                letter-spacing: 1.6px;
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: 900;
+                                font-family: Open_SansRegular, sans-serif;
+                                background: #16a085;
+                                border: 2px solid transparent;
+                                border-radius: 25px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    transition: .4s;
+                                    background: rgba(22, 160, 133, 0.15);
+                                    color: #16a085;
+                                    border: 2px solid #16a085;
+                                }
+                            }
+
+                            img {
+                                position: absolute;
+                                width: 345px;
+                                height: 325px;
+                                top: -55px;
+                                right: -23px;
+                                border-radius: 15px;
+                                order: 2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .arrow-left {
+                position: absolute;
+                width: 225px;
+                height: 425px;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,.2) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,.2) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+                &:before {
+                    content: "Пред.";
+                    position: absolute;
+                    display: block;
+                    top: 183px;
+                    left: 43px;
+                    font-size: 12px;
+                    font-family: Open_SansRegular, sans-serif;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 175px;
+                    left: 0;
+                    width: 34px;
+                    height: 34px;
+                    background: url("../images/icons.png") -140px -2px no-repeat;
+                }
+
+                &:hover {
+
+                    &:after,
+                    &:before {
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .arrow-right {
+                position: absolute;
+                width: 225px;
+                height: 425px;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                z-index: 1000;
+                background: -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, rgba(255,255,255,.2) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+                &:before {
+                    content: "След.";
+                    position: absolute;
+                    display: block;
+                    top: 183px;
+                    right: 43px;
+                    font-size: 12px;
+                    font-family: Open_SansRegular, sans-serif;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 175px;
+                    right: 0;
+                    width: 34px;
+                    height: 34px;
+                    background: url("../images/icons.png") -175px -2px no-repeat;
+                }
+
+                &:hover {
+
+                    &:after,
+                    &:before {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+
+        #owl-carousel3 {
+            margin: -8px 0 0 0;
+
+            .fa-facebook-official {
+                top: -30px;
+                left: 45px;
+            }
+
+            .box-list {
+
+                p {
+                    width: 165px;
+                }
+            }
+
+            img {
+                width: 439px;
+                height: 376px;
+                top: -73px;
+                right: -118px;
+            }
+        }
+
+        #owl-carousel4 {
+            margin-top: -4px;
+
+            .fa-facebook-official {
+                top: -14px;
+                left: 105px;
+                font-size: 46px;
+            }
+
+            .fa-instagram {
+                top: -14px;
+                left: 161px;
+                font-size: 46px;
+            }
+
+            .fa-vk {
+                top: -18px;
+                left: 38px;
+                font-size: 48px;
+            }
+
+            .box-list {
+
+                p {
+                    width: 250px;
+                }
+            }
+
+            img {
+                width: 324px;
+                height: 295px;
+                top: -32px;
+                right: 7px;
+            }
+        }
+
+        #owl-carousel5 {
+            margin-top: -21px;
+
+            .fa-facebook-official {
+                top: -14px;
+                left: 105px;
+                font-size: 46px;
+            }
+
+            .fa-instagram {
+                top: -14px;
+                left: 161px;
+                font-size: 46px;
+            }
+
+            .fa-vk {
+                top: -18px;
+                left: 38px;
+                font-size: 48px;
+            }
+
+            .box-list {
+
+                p {
+                    width: 250px;
+                }
+            }
+
+            img {
+                width: 200px;
+                height: 346px;
+                top: -64px;
+                right: -1px;
+            }
+        }
+    }
+}

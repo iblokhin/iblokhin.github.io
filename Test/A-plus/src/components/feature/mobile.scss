@@ -1,0 +1,57 @@
+& {
+    background: url('../images/bg-feature-mob.png') 211px 15px no-repeat;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+        h2 {
+            margin: 33px 25px 12px 14px;
+            text-align: left;
+            line-height: 35px;
+            letter-spacing: 2px;
+            color: #282828;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 30px;
+        }
+
+        > p {
+            margin: 3px 18px 0 17px;
+            font-size: 16px;
+            letter-spacing: .7px;
+            line-height: 19px;
+            color: #282828;
+            text-align: left;
+            font-family: Open_SansRegular, sans-serif;
+        }
+
+        > a {
+            width: 290px;
+            margin: 55px auto 40px;
+            padding: 7px 35px 7px 35px;
+            line-height: 18px;
+            color: #fff;
+            font-family: Open_SansRegular, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            border-radius: 27px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #159f85;
+            text-decoration: none;
+
+            &:hover {
+                transition: .3s;
+                box-shadow: none;
+                color: #159f85;
+                border: 2px solid #159f85;
+                box-sizing: border-box;
+                background: transparent;
+            }
+        }
+    }
+}

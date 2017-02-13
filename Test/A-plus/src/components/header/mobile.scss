@@ -1,0 +1,98 @@
+& {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url('../images/bg-header-mob.png') 0 0 no-repeat;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+
+        .header-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p,
+            button,
+            .mouse,
+            .menu li {
+                display: none;
+            }
+
+            .logo,
+            .menu,
+            .call-me {
+                position: relative;
+            }
+
+            .menu {
+                order: 1;
+
+                li:first-child {
+                    display: block;
+                }
+            }
+
+            .logo {
+                order: 2;
+
+                img {
+                    margin-top: 15px;
+                }
+            }
+
+
+            .call-me {
+                order: 3;
+            }
+
+            .fa-bars {
+                display: block;
+                margin: 13px 0 0 15px;
+                font-size: 30px;
+                color: #fff;
+            }
+
+            .fa-phone {
+                margin: 12px 15px 0 0;
+                color: #fff;
+                font-size: 32px;
+                transform: rotate(-85deg);
+            }
+
+        }
+
+        h1 {
+            margin: 146px 0 0 16px;
+            line-height: 38px;
+            letter-spacing: 2px;
+            color: #fff;
+            font-size: 33px;
+            font-family: GothamPro-Black, Arial, sans-serif;
+
+            span {
+                display: block;
+                font-size: 21px;
+                letter-spacing: 1.1px;
+            }
+        }
+
+        > a {
+            width: 288px;
+            margin: 131px auto 20px;
+            padding: 20px 12px 20px 72px;
+            letter-spacing: 1.1px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: "Open_SansRegular", sans-serif;
+            border-radius: 27px;
+            background-color: #159f85;
+            box-shadow: 0 0 100px 20px rgba(22,160,133,.7);
+        }
+    }
+}

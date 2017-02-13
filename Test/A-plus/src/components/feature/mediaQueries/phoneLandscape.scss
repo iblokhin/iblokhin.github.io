@@ -1,0 +1,16 @@
+@import '../mobile';
+
+& {
+    background: url('../images/bg-feature-mob.png') 459px 15px no-repeat;
+
+    .container {
+
+        h2 {
+            margin: 50px 125px 12px 20px;
+        }
+
+        > p {
+            margin: 3px 100px 0 20px;
+        }
+    }
+}

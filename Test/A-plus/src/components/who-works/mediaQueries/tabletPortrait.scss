@@ -1,0 +1,83 @@
+@import '../mobile';
+
+.container {
+
+    h2 {
+        margin: 66px auto 0;
+    }
+
+    .works-list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: -25px;
+
+        .works-item {
+            margin-left: 50px;
+            line-height: 115px;
+        }
+
+        .works-item1 {
+
+            &:before {
+                top: -8px;
+                left: 33px;
+            }
+        }
+
+        .works-item2 {
+
+            &:before {
+                top: -8px;
+                left: 63px;
+            }
+        }
+
+        .works-item3 {
+
+            &:before {
+                top: -8px;
+                left: 53px;
+            }
+        }
+
+        .works-item4 {
+
+            &:before {
+                top: -8px;
+                left: 33px;
+            }
+        }
+
+        .works-item5 {
+
+            &:before {
+                top: -8px;
+                left: 28px;
+            }
+        }
+
+        .works-item6 {
+
+            &:before {
+                top: -8px;
+                left: 45px;
+            }
+        }
+
+        .works-item7 {
+
+            &:before {
+                top: -8px;
+                left: 20px;
+            }
+        }
+    }
+
+    > p {
+        margin: 9px 82px 0 75px;
+        line-height: 34px;
+        text-align: center;
+    }
+}

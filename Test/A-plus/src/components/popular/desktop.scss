@@ -1,0 +1,123 @@
+& {
+
+    background: url('../images/bg-popular.jpg') 0 0 no-repeat;
+    background-size: cover;
+    height: 724px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            margin: 95px 0 0 7px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: #fff;
+            font-family: "GothamProBlack", sans-serif;
+            font-size: 36px;
+        }
+
+        .pop-list {
+            margin: 46px 0 0 5px;
+
+            .pop-item {
+                position: relative;
+                font-size: 12px;
+                letter-spacing: .7px;
+                line-height: 60px;
+                color: #fff;
+                text-align: left;
+                font-family: Open_SansRegular, sans-serif;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 37px;
+                    height: 2px;
+                    top: 30px;
+                    left: -49px;
+                    background: #59595a;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 42px;
+                    height: 33px;
+                    top: 15px;
+                    left: -100px;
+                }
+            }
+
+            .pop-item1 {
+
+                &:before {
+                    background: url('../images/icons.png') 2px -96px no-repeat ;
+                }
+            }
+
+            .pop-item2 {
+
+                &:before {
+                    background: url('../images/icons.png') -39px -95px no-repeat ;
+                }
+            }
+
+            .pop-item3 {
+
+                &:before {
+                    background: url('../images/icons.png') -80px -95px no-repeat ;
+                }
+            }
+
+            .pop-item4 {
+
+                &:before {
+                    background: url('../images/icons.png') -122px -95px no-repeat ;
+                }
+            }
+
+            .pop-item5 {
+
+                &:before {
+                    background: url('../images/icons.png') -163px -95px no-repeat ;
+                }
+            }
+
+            .pop-item6 {
+
+                &:before {
+                    background: url('../images/icons.png') -207px -95px no-repeat ;
+                }
+            }
+        }
+
+        > a {
+            width: 230px;
+            margin: 36px 0 20px 0;
+            padding: 16px 0 17px 0;
+            color: #fff;
+            font-family: Open_SansRegular, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            border-radius: 27px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #159f85;
+            text-decoration: none;
+
+            &:hover {
+                transition: .3s;
+                box-shadow: none;
+                border: 2px solid #fff;
+                box-sizing: border-box;
+                background: transparent;
+            }
+        }
+    }
+
+}
