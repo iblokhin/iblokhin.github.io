@@ -1,0 +1,50 @@
+.card-post {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 15px rgba(195, 195, 195, 0.3);
+    &:hover {
+        box-shadow: 4px 4px 15px rgba(167, 167, 167, 0.5);
+        border-color: #fff;
+        .card-post__icon-trash {
+            display: inline-block;
+        }
+    }
+    &__icon-trash {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #5a5a5a;
+        display: none;
+        cursor: pointer;
+        &:hover {
+            color: #f00;
+        }
+    }
+    &__image {
+        width: auto;
+        object-fit: cover;
+    }
+    &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    &__text {
+        position: relative;
+        height: 48px;
+        overflow-y: hidden;
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+    &__buttons {
+        justify-content: space-between;
+    }
+}
