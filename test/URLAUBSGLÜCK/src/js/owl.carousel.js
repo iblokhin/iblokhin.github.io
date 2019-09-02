@@ -1,61 +1,3 @@
-$(document).ready(function(){
-    $('.carousel').owlCarousel({
-        loop:true,
-        margin: 10,
-        nav: true,
-        navText: [],
-        responsive:{
-            0:{
-                items:1
-            }
-        }
-    });
-
-    function grid() {
-        var $grid = $('.grid').imagesLoaded(function () {
-            $grid.masonry({
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true,
-                gutter: 20
-            });
-        })
-    }
-
-    function search() {
-        $('.grid-item').remove();
-        var $searchKey = $('.search-fields').val();
-
-        $.ajax({
-            url: 'https://pixabay.com/api/?key=2622995-abd40e805ecd1477d22481ce2&q=' + $searchKey + '&image_type=photo',
-            dataType: 'jsonp',
-            success: function (data) {
-                var $html = $('#wrapper').html();
-                var $content = tmpl($html, data);
-                $('.ideas').append($content);
-                grid();
-            },
-            error: function () {
-                alert('Error!');
-            }
-        });
-    }
-
-    search();
-
-    $('.search-btn').on('click', function (e) {
-        e.preventDefault();
-        search();
-        $('.search-fields').val('');
-    });
-
-    $('.search-fields').keypress(function () {
-        if (event.keyCode == 13) {
-            search();
-            $('.search-fields').val('');
-        }
-    });
-});
 /**
  * Owl carousel
  * @version 2.0.0
@@ -64,7 +6,7 @@ $(document).ready(function(){
  * @todo Lazy Load Icon
  * @todo prevent animationend bubling
  * @todo itemsScaleUp
- * @todo Test Zepto
+ * @todo test Zepto
  * @todo stagePadding calculate wrong active classes
  */
 ;(function($, window, document, undefined) {
@@ -3125,38 +3067,3 @@ $(document).ready(function(){
     $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 
 })(window.Zepto || window.jQuery, window, document);
-// Simple JavaScript Templating
-// John Resig - http://ejohn.org/ - MIT Licensed
-(function(){
-    var cache = {};
-
-    this.tmpl = function tmpl(str, data){
-        // Figure out if we're getting a template, or if we need to
-        // load the template - and be sure to cache the result.
-        var fn = !/\W/.test(str) ?
-            cache[str] = cache[str] ||
-                tmpl(document.getElementById(str).innerHTML) :
-
-            // Generate a reusable function that will serve as a template
-            // generator (and which will be cached).
-            new Function("obj",
-                "var p=[],print=function(){p.push.apply(p,arguments);};" +
-
-                // Introduce the data as local variables using with(){}
-                "with(obj){p.push('" +
-
-                // Convert the template into pure JavaScript
-                str
-                    .replace(/[\r\t\n]/g, " ")
-                    .split("<%").join("\t")
-                    .replace(/((^|%>)[^\t]*)'/g, "$1\r")
-                    .replace(/\t=(.*?)%>/g, "',$1,'")
-                    .split("\t").join("');")
-                    .split("%>").join("p.push('")
-                    .split("\r").join("\\'")
-                + "');}return p.join('');");
-
-        // Provide some basic currying to the user
-        return data ? fn( data ) : fn;
-    };
-})();

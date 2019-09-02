@@ -1,6 +1,6 @@
 var pow = require('../dist/js/pow.js');
 
-describe("Test pow function", function() {
+describe("test pow function", function() {
     it("10^5", function() {
         var result;
         result = pow(10, 5);

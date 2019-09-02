@@ -6,7 +6,7 @@
  * @todo Lazy Load Icon
  * @todo prevent animationend bubling
  * @todo itemsScaleUp
- * @todo Test Zepto
+ * @todo test Zepto
  * @todo stagePadding calculate wrong active classes
  */
 ;(function($, window, document, undefined) {
