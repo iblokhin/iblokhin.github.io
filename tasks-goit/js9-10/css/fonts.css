@@ -23,11 +23,11 @@
 
 @font-face {
     font-family: 'open sans extrabold';
-    src: url('../css/fonts/2206-webfont.eot');
-    src: url('../css/fonts/2206-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/2206-webfont.woff2') format('woff2'),
-         url('../css/fonts/2206-webfont.woff') format('woff'),
-         url('../css/fonts/2206-webfont.ttf') format('truetype');
+    src: url('fonts/2206-webfont.eot');
+    src: url('fonts/2206-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/2206-webfont.woff2') format('woff2'),
+         url('fonts/2206-webfont.woff') format('woff'),
+         url('fonts/2206-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

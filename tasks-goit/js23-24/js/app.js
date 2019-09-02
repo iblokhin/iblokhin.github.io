@@ -8,7 +8,7 @@ requirejs.config({
 
 require(
     [
-        'jquery',
+        'tasks-goit/js23-24/js/jquery',
         'tmpl',
         'model',
         'view',

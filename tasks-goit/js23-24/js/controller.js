@@ -1,6 +1,6 @@
 define(
     'controller',
-    ['model', 'view', 'jquery'],
+    ['tasks-goit/js23-24/js/model', 'view', 'jquery'],
     function (model, view) {
         function Controller(model, view) {
             var self = this;

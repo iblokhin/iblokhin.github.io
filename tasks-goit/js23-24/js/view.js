@@ -1,6 +1,6 @@
 define(
     'view',
-    ['model', 'jquery', 'tmpl'],
+    ['tasks-goit/js23-24/js/model', 'jquery', 'tmpl'],
     function (model) {
         function View(model) {
             var self = this;

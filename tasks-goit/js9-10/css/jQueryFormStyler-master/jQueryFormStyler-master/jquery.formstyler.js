@@ -12,10 +12,10 @@
 ;(function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
-		define(['jquery'], factory);
+		define(['tasks-goit/js23-24/js/jquery'], factory);
 	} else if (typeof exports === 'object') {
 		// CommonJS
-		module.exports = factory(require('jquery'));
+		module.exports = factory(require('tasks-goit/js23-24/js/jquery'));
 	} else {
 		factory(jQuery);
 	}
